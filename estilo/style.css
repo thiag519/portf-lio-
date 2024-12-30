@@ -1,5 +1,5 @@
 *{
-   
+    color: white;
     font-family:arial;
 }
 body{
@@ -128,6 +128,8 @@ nav li{
     height: calc(100vh );
     width: 100%;
     display: flex;
+    text-align: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -136,7 +138,7 @@ nav li{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 80%;
     width: 100%;
 
 }
@@ -146,6 +148,40 @@ nav li{
     width: 23%;
     margin: 5px;
 }
+.projeto-1  a img {
+    background-color: aliceblue;
+    height:auto;
+    width: 100%;
+    
+}
+/*.projeto-1 .projeto-link:hover {
+    transition: 0.5s linear;
+    opacity: 0.2;
+    background-color:#4b4b4b;
+    position: relative;
+}*/
+
+.projeto-1  a  {
+    text-decoration: none;  
+}
+
+.projeto-testo p{
+    text-align: center;
+    font-size: 25px;
+    width: 310px;
+    height: 200px;
+    margin:0px;
+    z-index: 1;
+    position: absolute;
+    color: transparent;
+}
+.projeto-testo p:hover{
+    transition: 0.5s linear;
+    color: white;
+    z-index: 1;
+    background-color: #4b4b4b72;
+    
+  }
 
 @media (max-width:700px){ 
     nav ul{
@@ -184,7 +220,7 @@ nav li{
     }
     .image-perfil, img {
         width: 100%;
-        height: 75%;
+        height: 85%;
        
     }
     
@@ -215,7 +251,7 @@ nav li{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        height: auto;
+        height: 80%;
         width: 100%;
     
     }
@@ -224,5 +260,24 @@ nav li{
         height:20% ;
         width: 23%;
         margin: 5px;
+    }
+    .projeto-1  a img {
+        background-color: aliceblue;
+        height:auto;
+        width: 100%;
+        
+    }
+    .projeto-1:hover{
+        background-color: rgb(141, 155, 155);
+        opacity: 0.2;  
+    }
+    .banner2 {
+        background-color: #4b4b4b;
+        height: calc(100vh );
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
