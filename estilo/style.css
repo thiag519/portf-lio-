@@ -1,13 +1,21 @@
 *{
     color: white;
     font-family:arial;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0px;
     padding: 0px;
+    
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
-
 header{
     display:flex;
     justify-content:center;
@@ -39,10 +47,7 @@ nav a{
 .logo{
     align-items: center;
     justify-content:flex-start;
-    display:flex;
-    
-    
-   
+    display:flex; 
 }
 .logo
 a img{
@@ -144,13 +149,13 @@ nav li{
 }
 .projeto-1 {
     background-color: aliceblue;
-    height:40% ;
+    height:auto ;
     width: 23%;
     margin: 5px;
 }
 .projeto-1  a img {
     background-color: aliceblue;
-    height:auto;
+    height:170px;
     width: 100%;
     
 }
@@ -165,11 +170,16 @@ nav li{
     text-decoration: none;  
 }
 
+.projeto-testo :hover {
+    background-color: #4b4b4b72;
+    z-index: 1;
+}
+
 .projeto-testo p{
     text-align: center;
-    font-size: 25px;
-    width: 310px;
-    height: 200px;
+    font-size: 17px;
+    width: 23%;
+    height: 30%;
     margin:0px;
     z-index: 1;
     position: absolute;
@@ -179,8 +189,6 @@ nav li{
     transition: 0.5s linear;
     color: white;
     z-index: 1;
-    background-color: #4b4b4b72;
-    
   }
 
 @media (max-width:700px){ 
@@ -257,20 +265,36 @@ nav li{
     }
     .projeto-1 {
         background-color: aliceblue;
-        height:20% ;
+        height:auto ;
         width: 23%;
         margin: 5px;
     }
     .projeto-1  a img {
         background-color: aliceblue;
-        height:auto;
+        height:95px;
         width: 100%;
         
     }
-    .projeto-1:hover{
-        background-color: rgb(141, 155, 155);
-        opacity: 0.2;  
+    .projeto-testo :hover {
+        background-color: #4b4b4b72;
+        z-index: 1;
     }
+    
+    .projeto-testo p{
+        text-align: center;
+        font-size: 10px;
+        width: 23%;
+        height: 30%;
+        margin:0px;
+        z-index: 1;
+        position: absolute;
+        color: transparent;
+    }
+    .projeto-testo p:hover{
+        transition: 0.5s linear;
+        color: white;
+        z-index: 1;
+      }
     .banner2 {
         background-color: #4b4b4b;
         height: calc(100vh );
