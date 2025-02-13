@@ -118,8 +118,7 @@ a img{
     height: 50px;
     border-radius: 50%;
     clip-path: circle(50%);
-    padding-left: 30px;
-   position:static;
+    position:static;
 }
 nav .active a,
 nav a:hover{
