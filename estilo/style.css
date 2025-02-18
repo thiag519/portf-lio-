@@ -144,7 +144,7 @@ nav li{
     align-items:center;
 }
 
-.menuMobile{
+.menu-mobile-line{
     display:none;
     height:40px;
     width:40px;
@@ -447,15 +447,47 @@ nav li{
     header{
         display:flex;
         height: auto;
+        height: 100px;
     }
     .logo{
         padding-left:20px;
     }
-    .menuMobile{
+    .menu-mobile-line{
         display:flex;
         flex-direction:column;
         justify-content:space-around;
     }
+    .menu-mobile {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        width: 70%;
+        height: 70%;
+        font-size:80%;
+        font-weight: 700;
+        z-index: 0;
+        position: inherit;
+        margin-top: calc(100px );
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    .menu-mobile ul {
+        width: 50%;
+        margin-left:10%;
+        background-color:#9eafa926;
+        height: auto;
+        color: white;
+    }
+    .menu-mobile ul li {
+        display:block;
+        padding: 7%;
+        text-decoration: none;   
+    }
+    .menu-mobile  a{
+        text-decoration: none;   
+    }
+
 
     .about-name-area {
         display: flex;
