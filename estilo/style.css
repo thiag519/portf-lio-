@@ -152,6 +152,10 @@ nav li{
     margin-bottom:40px;
     margin-right:20px;
 }
+.menu-mobile{
+    display: none;
+
+}
 .mm-line{
     height:3px;
     background-color:rgb(141, 155, 155);
@@ -363,7 +367,9 @@ nav li{
         width: 30%;
         margin: 5px;
     }
-
+    .menu-mobile{
+        display: none;
+    }
     .projeto-1  a img {
         background-color: aliceblue;
         height:60%;
@@ -458,36 +464,28 @@ nav li{
         justify-content:space-around;
     }
     .menu-mobile {
-        display:flex;
+        display:none;
         flex-direction:column;
-        justify-content:space-around;
         width: 70%;
-        height: 70%;
         font-size:80%;
         font-weight: 700;
-        z-index: 0;
-        position: inherit;
-        margin-top: calc(100px );
-        margin-top: 0;
-        margin-bottom: 0;
-        
+        align-items: flex-end;
+        margin-right: -30%;
+        cursor: pointer;
     }
+    
     .menu-mobile ul {
         width: 50%;
-        margin-left:10%;
         background-color:#9eafa926;
-        height: auto;
-        color: white;
     }
     .menu-mobile ul li {
         display:block;
-        padding: 7%;
-        text-decoration: none;   
+        padding: 7%;  
     }
     .menu-mobile  a{
         text-decoration: none;   
     }
-
+    
 
     .about-name-area {
         display: flex;
