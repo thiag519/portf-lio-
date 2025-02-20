@@ -156,15 +156,18 @@ nav li{
     display: none;
 
 }
+
 .mm-line{
     height:3px;
     background-color:rgb(141, 155, 155);
+    transition: 0.5s linear 1ms;
+    padding: 0;
 }
 /* primeira sessão*/
 
 .banner {
     background-color: #4b4b4b;
-    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
     width: 85%;
     display: flex;
     align-items: center;
@@ -213,7 +216,7 @@ nav li{
 
 .banner2 {
     background-color: #4b4b4b;
-    height: calc(100vh );
+    height: calc(100dvh );
     width: 85%;
     display: flex;
     text-align: center;
@@ -222,7 +225,7 @@ nav li{
 }
 .banner3 {
     background-color: #4b4b4b;
-    height: calc(100vh );
+    height: calc(100dvh );
     width: 85%;
     display: flex;
     text-align: center;
@@ -233,7 +236,7 @@ nav li{
 }
 .banner4 {
     background-color: #4b4b4b;
-    height: calc(100vh );
+    height: calc(100dvh );
     width: 85%;
     display: flex;
     text-align: center;
@@ -253,7 +256,7 @@ nav li{
 .area-skills-width{
     height: auto;
     display: flex;
-    width: 180vw;
+    width: 180dvw;
     transition: all ease 1s;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -416,7 +419,7 @@ nav li{
 
 }
 
-@media (max-width:700px) and (min-width:200px){ 
+@media (max-width:700px) and (min-width:200px) { 
 
     @keyframes name {
         0%{width: 157px;}
@@ -467,7 +470,7 @@ nav li{
         display:none;
         flex-direction:column;
         width: 70%;
-        font-size:80%;
+    
         font-weight: 700;
         align-items: flex-end;
         margin-right: -30%;
@@ -475,9 +478,11 @@ nav li{
     }
     
     .menu-mobile ul {
-        width: 50%;
-        background-color:#9eafa926;
+        width: 30%;
+        background-color: #9eafa926;
+        position: absolute;
     }
+    
     .menu-mobile ul li {
         display:block;
         padding: 7%;  
@@ -485,7 +490,19 @@ nav li{
     .menu-mobile  a{
         text-decoration: none;   
     }
-    
+   .animationUp {
+        transform: rotate(45deg);
+        margin-bottom: -20px;
+        
+   }
+   .animationMiddle {
+        display: none;
+    }
+   .animationLow {
+        transform: rotate(-45deg);
+        margin-top: -20px;
+        padding: 0;
+    }
 
     .about-name-area {
         display: flex;
@@ -595,7 +612,7 @@ nav li{
         /*position: relative;*/
         /*background-color:#4b4b4b ;*/
         height:30%;
-        width: 90%;
+        width: 85%;
         /*opacity: 0.4;*/
         
     }
@@ -608,7 +625,7 @@ nav li{
         /*background-color: transparent;*/
         text-align: center;
         font-size: 80%;
-        width: 70%;
+        width: 75%;
         height: 70px;
         margin-top:0; 
         color: white;
@@ -617,8 +634,8 @@ nav li{
     
     .banner4 {
         background-color: #4b4b4b;
-        height: calc(320vh );
-        width: 90%;
+        height: calc(450dvh );
+        width: 95%;
         display: flex;
         text-align: center;
         flex-direction: column;
