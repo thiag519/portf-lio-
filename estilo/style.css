@@ -11,6 +11,10 @@
     from{opacity: 0;}
     to {opacity: 1;}
 }
+@keyframes closeMenu {
+    from{opacity: 1;}
+    to {opacity: 0;}
+}
 
 @keyframes slider {
     from{left:-150%;}
@@ -54,7 +58,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    
+    /*overflow: hidden;*/
 }
 main {
     display: flex;
@@ -62,6 +66,10 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #4b4b4b;
+    
+}
+::-webkit-scrollbar{
+    width: 0px;
 }
 #header{
     display: flex;
@@ -168,12 +176,14 @@ nav li{
 }
 .menu-mobile ul li{
     display: none;
+   
 }
 .mm-line{
     height:3px;
     background-color:rgb(141, 155, 155);
     transition: 0.5s linear 1ms;
     padding: 0;
+    
 }
 /* primeira sessão*/
 
@@ -602,6 +612,7 @@ nav li{
         display:flex;
         flex-direction:column;
         justify-content:space-around;
+        cursor: pointer;
     }
     .menu-mobile {
         display:none;
@@ -614,14 +625,16 @@ nav li{
         position: fixed;
         top: 15%;
         z-index: 2;
-        animation: openMenu 1s  ease-in-out;
-        transition-delay: 2s;
+        transition-delay:7s initial;
+        /*animation: openMenu 0.5s  ease-in-out;*/
+        
     }
     
     .menu-mobile ul {
         width: 100%;
         height: 84dvh;
         background-color:#4b4b4b;
+        transition-delay:7s initial;
        /* */
     }
     
@@ -632,7 +645,8 @@ nav li{
     }
     .menu-mobile ul li a{
         text-decoration: none;
-        position: absolute;   
+        position: absolute; 
+        z-index: 2;  
     }
 
    
@@ -692,7 +706,7 @@ nav li{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        transition-delay: 2s;
+        
     }
     .image-perfil {
         display: flex;
@@ -738,6 +752,33 @@ nav li{
     }
     /* segunda sessao*/
 
+    .area-skills {
+        display: flex;
+        overflow: hidden; 
+        width: 100%;
+        height: 58%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .area-skills-width{
+        height: auto;
+        display: flex;
+        width: 190dvw;
+        transition: all ease 1s;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /*position: relative;*/
+    }
+    .skill{
+        text-shadow: 0px 3px 3px #333;
+        height: 100%;
+        width: 200px;
+        padding: 5px; 
+        /*position:inherit;*/
+        margin: 0;
+    }
+
     .area-projeto {
         display: flex;
         flex-wrap: wrap;
@@ -758,7 +799,7 @@ nav li{
         /*position: relative;*/
         /*background-color:#4b4b4b ;*/
         height:30%;
-        width: 85%;
+        width: 95%;
         /*opacity: 0.4;*/
         
     }
@@ -769,12 +810,14 @@ nav li{
     
     .projeto-testo p{
         /*background-color: transparent;*/
-        text-align: center;
-        font-size: 80%;
-        width: 75%;
+        text-align:start;
+        font-size: 90%;
+        width: 70%;
         height: 70px;
         margin-top:0; 
+        padding-left: 15px;
         color: white;
+        
         
     }
     
@@ -788,6 +831,15 @@ nav li{
         justify-content: space-between;
         
     }
+    footer{
+        height: calc(82vh ); 
+        width:100%;
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        background-color: #1c1c1c;
+    }
+
     footer #footer-contact {
         position:relative;
         display: flex;
