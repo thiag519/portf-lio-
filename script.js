@@ -2,7 +2,7 @@
     let menuMob = document.querySelector('.menu-mobile');
     let mmLines = document.querySelectorAll('.mm-line');
    
-
+  // abrir e feichar o menu
     function menuToggle() {
     if(menuMob.style.display === 'flex') {
       menuMob.style.display = 'none';
@@ -18,7 +18,7 @@
       mmLines[2].classList.toggle('animationLow');
       mmLines[1].classList.toggle('animationMiddle')  ;      
     }
-
+    // feichar o menu quando clicar em um item no menu
     function closeMenu() {
       menuMob.style.opacity= '1';
       setTimeout(() => {

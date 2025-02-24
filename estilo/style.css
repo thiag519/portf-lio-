@@ -6,6 +6,20 @@
     padding: 0;
     
 }
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.slider{
+    animation: slider 9s infinite linear;
+}
+.name {
+    animation: name 7s infinite ease-in-out;
+}
+.pisca {
+    animation: linear pisca 0.7s infinite;
+    transition: none;
+}
 @keyframes openMenu {
     from{opacity: 0;}
     to {opacity: 1;}
@@ -57,7 +71,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    /*overflow: hidden;*/
 }
 main {
     display: flex;
@@ -67,9 +80,7 @@ main {
     background-color: #4b4b4b;
     
 }
-::-webkit-scrollbar{
-    width: 0px;
-}
+
 #header{
     display: flex;
     justify-content: space-around;
@@ -88,49 +99,6 @@ main {
     position: fixed;
     background-color: #4b4b4b;
     z-index: 2;
-}
-.about-name-area {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    text-wrap: nowrap;
-    width: 100%;
-    height: auto;
-  
-}
-.about-name {
-    font-size: 50px;
-    width:315px; 
-    flex-wrap: nowrap;
-    z-index: 0;  
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.bar {
-    font-size: 50px;
-    margin: 0;
-}
-.slider{
-    animation: slider 9s infinite linear;
-}
-
-.name {
-    animation: name 7s infinite ease-in-out;
-}
-.pisca {
-    animation: linear pisca 0.7s infinite;
-    transition: none;
-}
-nav ul{
-    display: flex;
-}
-nav a{
-    display:block;
-    padding:15px;
-    font-weight: 700;
-    text-decoration: none;
-    font-family: Arial;    
 }
 
 .logo{
@@ -167,12 +135,10 @@ nav li{
     margin-right:20px;
 }
 .menu-mobile{
-    display: none;
-    
+    display: none;  
 }
 .menu-mobile ul li{
-    display: none;
-   
+    display: none;  
 }
 .mm-line{
     height:3px;
@@ -181,8 +147,8 @@ nav li{
     padding: 0;
     
 }
-/* primeira sessão*/
 
+/* inicio*/
 #banner {
     background-color: #4b4b4b;
     height: calc(100dvh - 100px);
@@ -228,7 +194,42 @@ nav li{
     font-size: 30px;
     text-align:start;
 }
-/* segunda sessao*/
+.about-name-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  
+}
+.about-name {
+    font-size: 50px;
+    width:315px; 
+    flex-wrap: nowrap;
+    z-index: 0;  
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.bar {
+    font-size: 50px;
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+}
+nav a{
+    display:block;
+    padding:15px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Arial;    
+}
+
+
+/* sobre mim*/
 
 #banner2 {
     background-color: #4b4b4b;
@@ -239,6 +240,9 @@ nav li{
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* habilidades*/
+
 #banner3 {
     background-color: #4b4b4b;
     height: calc(100dvh );
@@ -248,21 +252,6 @@ nav li{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-}
-#banner4 {
-    background-color: #4b4b4b;
-    height: calc(100dvh );
-    width: 85%;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.banner_title {
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 .area-skills {
     display: flex;
@@ -287,6 +276,24 @@ nav li{
     width: 12vw;
     margin: 5px; 
     position:inherit;
+}
+
+/* projetos*/
+
+#banner4 {
+    background-color: #4b4b4b;
+    height: calc(100dvh );
+    width: 85%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner_title {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .area-projeto {
@@ -336,6 +343,9 @@ nav li{
     color: white;
     z-index: 1;
   }
+
+  /*footer*/
+
   footer{
     height:calc(100dvh - 170px); 
     width:100%;
@@ -473,7 +483,7 @@ nav li{
         width: 100%;
     }
     .projeto-1 {
-        background-color: aliceblue;
+        background-color:#4b4b4b;
         height: auto;
         width: 40%;
         margin: 10px;
@@ -487,14 +497,13 @@ nav li{
         width: 95%;
         
     }
-    .projeto-testo p{
+    .projeto-testo p {
         text-align: center;
-        font-size: 90%;
-        padding-top: 10px;
-        width: 26%;
-        height: 21%;
-        margin-top: -13%;
-        color: transparent;
+        font-size: 85%;
+        padding-top: 5px;
+        width: 35%;
+        margin-top: -1%;
+        color: silver;
     }
     .projeto-testo p:hover{
         
