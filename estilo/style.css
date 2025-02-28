@@ -462,6 +462,16 @@ nav a{
         flex-wrap: nowrap;
         padding:0;
     }
+
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 75%;
+        width: 100%;
+        font-size: 12px;
+    }
     .area-skills-width {
         height: auto;
         display: flex;
@@ -478,9 +488,18 @@ nav a{
         margin: 5px;
         position: inherit;
     }
+    #banner2{
+        background-color: #4b4b4b;
+        height: 100dvh;
+        width: 85%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     #banner4 {
         background-color: #4b4b4b;
-        height: calc(330dvh);
+        height: calc(380dvh);
         width: 85%;
         display: flex;
         text-align: center;
@@ -513,7 +532,7 @@ nav a{
     }
     .projeto-testo p {
         text-align: center;
-        font-size: 70%;
+        font-size: 60%;
         padding-top: 5px;
         width: 35%;
         margin-top: -1%;
@@ -761,7 +780,7 @@ nav a{
         flex-direction: column;
         height: 75%;
         width: 100%;
-        font-size: large;
+        font-size: 15px;
     }
     
 
