@@ -91,8 +91,9 @@ main {
     padding: 0;
 }
 .header{
+    top: 0;
     width: 85%;
-    height: 120px;
+    height: 20dvh;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -173,9 +174,9 @@ nav li{
     opacity: 0.4;
 }
 .image-perfil  img:hover{
-    transition: 0.5s linear;
+    transition: 0.1s linear;
     /*border-radius: 20%;*/
-    transform: rotate(20deg);
+    margin-top: 10px;
     opacity: 0.3;
 }
 
@@ -360,7 +361,7 @@ nav a{
 }
 .projeto-testo p:hover{
     transition: 0.5s linear;
-    color: silver;
+    color: #9eafa9;
     z-index: 1;
   }
 
@@ -424,7 +425,7 @@ nav a{
     .header {
         width: 85%;
         top: 0;
-        height: 90px;
+        height: 20dvh;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -541,11 +542,15 @@ nav a{
         padding-top: 5px;
         width: 35%;
         margin-top: -1%;
-        color: silver;
+        color:#9eafa9;
+    }
+    .projeto-testo :hover {
+        background-color:transparent;
+        position:absolute;
+        z-index: 1;
     }
     .projeto-testo p:hover{
         transition: 0.5s linear;
-        color: white;
         z-index: 1;
       }
 
@@ -630,7 +635,7 @@ nav a{
    
     .header {
         width: 85%;
-        height: 100px;
+        height: 20dvh;
         justify-content: space-between;
         display: flex;
         align-items: center;
