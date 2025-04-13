@@ -9,12 +9,6 @@
 ::-webkit-scrollbar{
     width: 0px;
 }
-/*.openMenu {
-    animation: openMenu 5s linear;
-}
-.closeMenu {
-    animation: closeMenu 5s linear;
-}*/
 
 .slider{
     animation: slider 9s infinite linear;
@@ -45,7 +39,7 @@
     50%{color:#9eafa9;}
     100%{color:#4b4b4b;}
 }
-@keyframes name {
+/*@keyframes name {
     0%{width: 315px;}
     4%{width: 282px}
     8%{width: 256px}
@@ -72,7 +66,7 @@
     92%{width: 282px}
     96%{width: 315px}
     100%{width: 315px}
-}
+}*/
 
 body{
     margin: 0px;
@@ -177,7 +171,7 @@ nav li{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 .image-perfil  img:hover{
     transition: 0.1s linear;
@@ -349,9 +343,9 @@ nav a{
 }
 
 .projeto-testo :hover {
-    background-color:#4b4b4bc7;
+    background-color:#4b4b4bf3;
     position:absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
 .projeto-testo p{
@@ -430,7 +424,7 @@ nav a{
     justify-content: space-around;
 }
   @media (max-width:900px) and (min-width:501px){
-    @keyframes name {
+    /*@keyframes name {
         0%{width: 157px;}
         4%{width: 141px}
         8%{width: 128px}
@@ -457,7 +451,7 @@ nav a{
         92%{width: 141px}
         96%{width: 157px}
         100%{width: 157px}  
-    }
+    }*/
 
     .header {
         width: 85%;
@@ -637,7 +631,7 @@ nav a{
         to{left: 200dvw;}
     }
 
-    @keyframes name {
+    /*@keyframes name {
         0%{width: 157px;}
         4%{width: 141px}
         8%{width: 128px}
@@ -664,7 +658,7 @@ nav a{
         92%{width: 141px}
         96%{width: 157px}
         100%{width: 157px}  
-    }
+    }*/
 
     nav ul{
         display: none;
