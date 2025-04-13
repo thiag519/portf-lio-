@@ -18,7 +18,7 @@
     50%{color:#9eafa9;}
     100%{color:#4b4b4b;}
 }
-@keyframes name {
+/*@keyframes name {
     0%{width: 315px;}
     4%{width: 282px}
     8%{width: 256px}
@@ -45,7 +45,7 @@
     92%{width: 282px}
     96%{width: 315px}
     100%{width: 315px}
-}
+}*/
 
 body{
     margin: 0px;
@@ -70,6 +70,16 @@ header{
     width:85%;
     justify-content:space-between;
     display:flex;
+}
+.about-texto p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 70px;
+  
 }
 .about-name-area {
     display: flex;
