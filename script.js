@@ -57,6 +57,17 @@
       });
     });
     
+  let countN = 0;
+  let count =    document.querySelector(".count").value;
+  
+  document.addEventListener(
+    'visibilitychange', () => {
+    if(document.visibilityState === "visible") {
+       count.innerHTML = "acesso é "+(countN + 1);
+    }
+    }
+  );
+  console.log(countN)
     
 
 
