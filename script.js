@@ -1,23 +1,67 @@
-// Botão de menu inicial
 
-// Botão de menu mobile
-// Animação do nome
-// Animação das habilidades slider
-    
-    let numberImg ;
-    let stringO ;
-    let start = 0;
-        stringO = document.querySelector('title').innerText;
-        numberImg = document.querySelectorAll('.skill').length;
-
-    function testar() {
-        start ++;
-        if(start > (numberImg -1)) {
-            start = 0
-        }
-        
+    let menuMob = document.querySelector('.menu-mobile');
+    let mmLines = document.querySelectorAll('.mm-line');
+   
+  // abrir e feichar o menu
+    function menuToggle() {
+    if(menuMob.style.display === 'flex') {
+      menuMob.style.opacity= '1';
+      setTimeout(() => {
+        menuMob.style.opacity= '0';
+        menuMob.style.display = 'none';
+      }, 500);
+    }else{
+      menuMob.style.opacity= '0';
+      setTimeout( () =>{
+        menuMob.style.display = 'flex';
+        menuMob.style.opacity= '1';
+      }, 500)
+      
     }
-    setInterval(testar, 3000);
+      mmLines[0].classList.toggle('animationUp');
+      mmLines[2].classList.toggle('animationLow');
+      mmLines[1].classList.toggle('animationMiddle')  ;      
+    }
+    // feichar o menu quando clicar em um item no menu
+    function closeMenu() {
+      menuMob.style.opacity= '1';
+      setTimeout(() => {
+        menuMob.style.opacity= '0';
+        menuMob.style.display = 'none';
+      }, 300);
+      mmLines[0].classList.toggle('animationUp');
+      mmLines[2].classList.toggle('animationLow');
+      mmLines[1].classList.toggle('animationMiddle');
+    }
+    // ativar area de clique do menu
+    let menuBtn = document.querySelectorAll('.menu li');
+    
+    menuBtn.forEach((item) => {
+      item.addEventListener('click', () => {
+        menuBtn.forEach((item) => {
+          item.classList.remove('active');
+        });
+        item.classList.add('active');
+      });
+    });
+    // ativar area de clique do menu mobile
+    
+    let menuBtnMob = document.querySelectorAll('.menu-mobile li'); 
+
+    menuBtnMob.forEach((item) => {
+      item.addEventListener('click', () => {
+        menuBtnMob.forEach((item) => {
+          item.classList.remove('active');
+        });
+        item.classList.add('active');
+      });
+    });
+    
+  
+    
+
+
+    
            
 
     
