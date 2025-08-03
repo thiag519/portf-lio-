@@ -6,16 +6,20 @@
     function menuToggle() {
     if(menuMob.style.display === 'flex') {
       menuMob.style.opacity= '1';
+      menuMob.style.animation= "0.3s closeMenu linear ";
+    
       setTimeout(() => {
+        //menuMob.style.animation= "0.5s openMenu linear ";
         menuMob.style.opacity= '0';
         menuMob.style.display = 'none';
-      }, 500);
+      }, 300);
     }else{
       menuMob.style.opacity= '0';
+      menuMob.style.animation= "0.3s openMenu linear ";
       setTimeout( () =>{
         menuMob.style.display = 'flex';
         menuMob.style.opacity= '1';
-      }, 500)
+      }, 300)
       
     }
       mmLines[0].classList.toggle('animationUp');
@@ -24,7 +28,8 @@
     }
     // feichar o menu quando clicar em um item no menu
     function closeMenu() {
-      menuMob.style.opacity= '1';
+      menuMob.style.opacity = '1';
+      menuMob.style.animation= "0.3s closeMenu linear ";
       setTimeout(() => {
         menuMob.style.opacity= '0';
         menuMob.style.display = 'none';
@@ -56,8 +61,8 @@
         item.classList.add('active');
       });
     });
-    
-  
+
+//criar animação no nome e add um efeito no mouse
     
 
 
