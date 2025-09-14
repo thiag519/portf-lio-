@@ -332,6 +332,7 @@ nav a{
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 .about-me {
     display: flex;
@@ -486,6 +487,7 @@ nav a{
     align-items: center;
     flex-direction: column;
     background-color: var(--color-primary);
+    overflow: hidden;
   }
   .contact-iconi{
     display: flex;
@@ -628,6 +630,7 @@ nav a{
         text-align: center;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
     }
 
     .area-projeto {
@@ -716,6 +719,7 @@ nav a{
         align-items: center;
         flex-direction: column;
         background-color: var(--color-background);
+        overflow: hidden;
     }
 
     footer #footer-contact {
@@ -743,6 +747,7 @@ nav a{
     background-color: #4b4b4b;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
     nav ul{
         display: none;
@@ -844,12 +849,12 @@ nav a{
     }
     #banner {
         background-color: var(--color-primary);
-       /* height: calc(100vh - 104px);*/
+       height: calc(100dvh);
         width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column; 
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .image-perfil {
@@ -857,7 +862,7 @@ nav a{
         justify-content: center;
         align-items: center;
         font-size: large;
-        height:calc(100vh - 40px);;
+        height:calc(100dvh);;
         width: 100%;
         opacity: 0.3;
     }
@@ -988,7 +993,7 @@ nav a{
         text-align: center;
         flex-direction: column;
         justify-content: space-between;
-        overflow-y: hidden;
+        
     }
     footer{
         height: calc(100dvh); 
@@ -997,6 +1002,7 @@ nav a{
         align-items: center;
         flex-direction: column;
         background-color: var(--color-background);
+        overflow-y: hidden;
     }
     .contact-iconi{
         display: flex;
