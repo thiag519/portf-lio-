@@ -138,6 +138,7 @@ header{
     align-items: center;
     justify-content:flex-start;
     display:flex; 
+    background-color: #9eafa9;
 }
 .logo
 a img{
@@ -200,6 +201,7 @@ nav li{
     height: 100%;
     width:100%; 
     padding: 5px;
+    background-color: #9eafa9;
 }
 
 .image-perfil  img {
