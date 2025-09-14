@@ -138,7 +138,6 @@ header{
     align-items: center;
     justify-content:flex-start;
     display:flex; 
-    background-color: #9eafa9;
 }
 .logo
 a img{
@@ -148,6 +147,7 @@ a img{
     clip-path: circle(50%);
     position:static;
     object-fit: cover;
+    background-color: #9eafa9;
 }
 nav .active a,
 nav a:hover{
@@ -201,7 +201,7 @@ nav li{
     height: 100%;
     width:100%; 
     padding: 5px;
-    background-color: #9eafa9;
+    
 }
 
 .image-perfil  img {
@@ -212,7 +212,7 @@ nav li{
     object-fit: cover;
     object-position:center;
     background-position: center;
-    
+    background-color: #9eafa9;
 }
 .image-perfil  img:hover{
     transition:0.4s linear ;
