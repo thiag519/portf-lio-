@@ -193,6 +193,7 @@ nav li{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    position: relative;
     overflow: hidden;
 }
 .image-perfil {
@@ -333,6 +334,7 @@ nav a{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    position: relative;
 }
 .about-me {
     display: flex;
@@ -360,6 +362,7 @@ nav a{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    position: relative;
 }
 .area-skills {
     display: flex;
@@ -394,7 +397,8 @@ nav a{
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
+    position: relative;
 }
 .banner_title {
     height: 220px;
@@ -488,6 +492,7 @@ nav a{
     flex-direction: column;
     background-color: var(--color-primary);
     overflow: hidden;
+    position: relative;
   }
   .contact-iconi{
     display: flex;
@@ -543,7 +548,7 @@ nav a{
     .header {
         width: 85%;
         top: 0;
-        height: 20dvh;
+        height: 10dvh;
         justify-content: space-between;
         display: flex;
         align-items: center;
