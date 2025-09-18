@@ -1,10 +1,21 @@
 *{
     color: var(--color-text);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
+
+/* <weight>: Use a value from 100 to 700*/
+/* <uniquifier>: Use a unique and descriptive class name*/
+
+.josefin-sans-uniquifier {
+    
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 :root {
     --color-primary: #4b4b4b;
     --color-secondary: #9eafa9;
@@ -22,7 +33,7 @@
 7- criar animação no nome e add um efeito no mouse
 
 3- criar modal para projetos
-10- no sobre mim, criar typeline
+10- no sobre mim, criar timeline
 */
 ::-webkit-scrollbar{
     width: 0px;
@@ -65,7 +76,6 @@
     white-space: nowrap;
     overflow: hidden;
     letter-spacing: 0.2ch;
-    /*font-family: 'Courier New', Courier, monospace;*/
     border-right: 0.12em solid var(--color-secondary);
     animation: writing 2.5s steps(13, end)  1s infinite alternate,
                blink 0.7s step-end infinite 
@@ -98,9 +108,7 @@ header{
     text-wrap: nowrap;
     width: 100%;
     height: auto;
-    font-size: 70px;
     box-shadow: 1px 1px 3px var(--color-background) ;
-    font-family: 'Courier New', Courier, monospace;
     background-color: aqua;
 }
 .about-name {
@@ -231,13 +239,12 @@ nav li{
     height: 100%;
     width: 100%;
     padding: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px; 
+    font-size: 50px; 
     position: relative;
 }
 .complemento-decricao {
     margin-top: 10px;
-    font-size: large;
+    font-size: 23px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -587,7 +594,7 @@ nav a{
         padding:0;
     }
     .about-name  {
-        font-size: 30px;
+        font-size: 35px;
         width:100%; 
         flex-wrap: nowrap;
         padding:0;
@@ -690,7 +697,7 @@ nav a{
         flex-direction: column;
         height: 100%;
         width: 94%;
-        font-size: 25px;
+        font-size: 35px;
         text-align: start;
     }
         .projeto-1 .projeto-image img {
