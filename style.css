@@ -4,6 +4,7 @@
     font-weight: 700;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* <weight>: Use a value from 100 to 700*/
@@ -19,6 +20,7 @@
 :root {
     --color-primary: #4b4b4b;
     --color-secondary: #9eafa9;
+    --color-distaque: #05ffa8;
     --color-text: #ddd;
     --color-background: #1c1c1c;
 }
@@ -64,7 +66,7 @@
 }
 @keyframes blink {
     0% {border-color: transparent;}
-    50% {border-color: var(--color-secondary);}
+    50% {border-color: var(--color-distaque);}
 }
 .name-writing {
     font-size: calc(20px, 6vw, 48px);
@@ -75,23 +77,23 @@
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    letter-spacing: 0.2ch;
-    border-right: 0.12em solid var(--color-secondary);
+    letter-spacing: 5.3px;
+    border-right: 0.12em solid var(--color-distaque);
     animation: writing 2.5s steps(13, end)  1s infinite alternate,
                blink 0.7s step-end infinite 
 }
  
 body{
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
+    
 }
 main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--color-primary);
-    
+    background-color: var(--color-primary);transition: 0.5s linear 1ms;
 }
 header{
     display:flex;
@@ -126,19 +128,19 @@ header{
     justify-content: space-around;
     height: 20vh;
     align-items: center;
-    background-color: #4b4b4b;
+    background-color:var(--color-primary);
     margin: 0;
     padding: 0;
 }
 .header{
     top: 0;
-    width: 85%;
+    width: 80%;
     height: 10vh;
     justify-content: space-between;
     display: flex;
     align-items: center;
     position: fixed;
-    background-color: #4b4b4b;
+    background-color:var(--color-primary);
     z-index: 2;
 }
 
@@ -155,13 +157,15 @@ a img{
     clip-path: circle(50%);
     position:static;
     object-fit: cover;
-    background-color: #9eafa9;
+    background-color:var(--color-distaque)
 }
-nav .active a,
-nav a:hover{
-    background-color:#9eafa9;
+ .active { 
+    background-color:var(--color-distaque);
     color:var(--color-text);
-    text-shadow: 1px 1px 3px var(--color-background);
+    text-shadow: 2px 4px 10px var(--color-background);
+    height: 5px;
+    transition: 0.5s ease-out ;
+    box-shadow: 2px 4px 10px var(--color-secondary);
 }
 nav li{
     list-style: none;
@@ -214,7 +218,7 @@ nav li{
     
 }
 
-.image-perfil  img {
+.image-perfil img {
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -230,6 +234,7 @@ nav li{
     opacity: 0.5;
    
 }
+
 .about-perfil {
     display: flex;
     justify-content: center;
@@ -249,44 +254,47 @@ nav li{
 }
 
 .area-contatos {
-    width: 170px;
+    /* width: 170px; */
+    /* height: auto; */
     position: fixed;
     bottom: 0;
-    right: 0;
-    margin-right:30px ;
+    left: 0;
+    margin-left: 30px;
     margin-bottom: 30px;
     z-index: 20;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: flex-end; */
 }
 .area-contatos a {
     text-decoration: none;
 }
 
-.contato-cv {
-    height: 30px;
-    width: 80px;
-    background-color:#9eafa9;
-    border-radius: 7px;
+.contato-git {
+    height: 25px;
+    width: 25px;
+    background-color:var(--color-distaque);
+    border-radius: 16px;
     font-size: small;
     display: flex;
     align-items: center;
     justify-content: center;
     text-shadow: 1px 1px 3px var(--color-background);
-    box-shadow: 1px 2px 7px var(--color-background);
+    box-shadow: 1px 10px 20px var(--color-background);
 }
 
 .contato-whatsapp {
-    height: 30px;
-    width: 80px;
-    background-color: #9eafa9;
-    border-radius: 7px;
+    margin-top: 10px;
+    height: 23px;
+    width: 25px;
+    background-color: var(--color-distaque);
+    border-radius: 16px;
     font-size:small;
     display: flex;
     align-items: center;
     justify-content: center;
     text-shadow: 1px 1px 3px var(--color-background);
-    box-shadow: 1px 2px 7px var(--color-background);
+    box-shadow: 1px 10px 20px var(--color-background);
 }
 
 .about-text {
@@ -327,22 +335,22 @@ nav a{
     display:block;
     padding:15px;
     font-weight: 700;
-    text-decoration: none;
-    font-family: Arial;    
+    text-decoration: none;    
 }
 
 /* sobre mim*/
+
+
 #banner2 {
     background-color: #4b4b4b;
-    height: calc(100vh );
+    /*height: calc(100vh );*/
     width: 85%;
-    display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-}
+}/*
 .about-me {
     display: flex;
     justify-content: center;
@@ -357,6 +365,58 @@ nav a{
     padding: 10px;
     text-align: justify;
     text-shadow: 1px 1px 3px #1c1c1c ;
+}
+*/
+
+.timeline {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.timeline h2 {
+    text-align: start;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid var(--color-distaque);
+    /* cor da linha */
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-distaque);
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
+    box-shadow: 0 0 0 3px var(--color-secondary);
+}
+
+.timeline-item .year {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--color-distaque);
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    margin: 0;
+   /* color: #444;*/
+    line-height: 1.5;
+    text-align: start;
 }
 
 /* habilidades*/
@@ -389,7 +449,7 @@ nav a{
     position: relative;
 }
 .skill{
-    text-shadow: 0px 3px 3px #333;
+    text-shadow: 0px 3px 3px var(--color-primary);
     height: 100%;
     width: 12vw;
     margin: 5px; 
@@ -398,7 +458,7 @@ nav a{
 
 /* projetos*/
 #banner4 {
-    background-color: #4b4b4b;
+    background-color:var(--color-primary);
     width: 85%;
     display: flex;
     text-align: center;
@@ -468,7 +528,7 @@ nav a{
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    background-color:#9eafa9;
+    background-color:var(--color-distaque);
     text-shadow: 1px 1px 3px var(--color-background);
     box-shadow: 1px 3px 10px var(--color-background);
 }
@@ -479,7 +539,7 @@ nav a{
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    background-color: #9eafa9;
+    background-color: var(--color-distaque);
     text-shadow: 1px 1px 3px var(--color-background);
     box-shadow: 1px 3px 10px var(--color-background);
 }
@@ -529,17 +589,30 @@ nav a{
     width: 100%;
     height: 30%;
   }
+   .curriculo {
+       display: flex;
+       text-align: center;
+       flex-direction: column;
+       padding-top: 10px;
+       background-color: var(--color-background);
+       width: 100%;
+      
+   }
   .email a{
     padding: 10px; 
     text-decoration: none;  
     
   }
+   .curriculo a {
+       padding: 10px;
+       text-decoration: none;
+
+   }
   .img-git{
     color: var(--color-background);
     background-color: white;
     border-radius: 50%;
     width: 19px;
-    margin-bottom: 3px;
     padding: 0;
     border:white 4px solid ;
   }
@@ -563,6 +636,11 @@ nav a{
         background-color: var(--color-primary);
         z-index: 2;
     }
+
+    .about-name {
+        letter-spacing: 3.5px;
+    }
+
     .menu{
         padding: 10px;
     }
@@ -625,7 +703,7 @@ nav a{
         margin: 5px;
         position: inherit;
     }
-    #banner2{
+   /* #banner2{
         background-color: var(--color-primary);
         height: 100vh;
         width: 85%;
@@ -633,7 +711,7 @@ nav a{
         text-align: center;
         flex-direction: column;
         justify-content: space-between;
-    }
+    }*/
     #banner4 {
         background-color: var(--color-primary);
        /* height: calc(380dvh);*/
@@ -750,13 +828,16 @@ nav a{
         from{left:-140vw;}
         to{left: 200vw;}
     }
+    *{
+        scroll-behavior: auto;
+    }
 
     #header{
     display: flex;
     justify-content: space-around;
     height: 10vh;
     align-items: center;
-    background-color: #4b4b4b;
+    background-color:var(--color-primary);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -820,13 +901,11 @@ nav a{
         position: absolute; 
         z-index: 2;  
         width: 80%;
-        height: 7%;
-        padding: 10px 0 0 10px;
         text-align:start;
-        transition-duration: 3s;
+        transition-duration: 2s;
     }
     .active a {
-        background-color: var(--color-secondary);
+        background-color: var(--color-distaque);
         color: var(--color-text);
       
     }
@@ -885,6 +964,10 @@ nav a{
         border-radius: 0;
     }
     
+        .about-name {
+            letter-spacing: 3.7px;
+        }
+
     .about-perfil {
         display: flex;
         justify-content: center;
@@ -903,7 +986,7 @@ nav a{
         padding-left: 10px;
         height: 90%;
         width: 90%;
-        font-size: 25px;
+        font-size: 35px;
         text-align: start;
     }
     .about-name-area {
@@ -1022,7 +1105,7 @@ nav a{
         justify-content: center;
         width: 100%;
         height: 100%;
-        background-color: #4b4b4b;
+        background-color:var(--color-primary);
     }
 
     footer #footer-contact {
