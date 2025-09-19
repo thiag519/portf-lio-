@@ -2,50 +2,50 @@ const projetos = [
   { id:1, 
     titulo:'Urna Eletronica',
     imagem: 'projetos/Urna.PNG', 
-    descricao: ' Este projeto simula uma urna eletrônica, permitindo que o usuário vote em candidatos fictícios e visualize o resultado da votação. também conta com um botão de colinha para auxiliar o usuário na escolha do candidato, desenvolvido com HTML, CSS e JavaScript.',
+    descricao: [" Permitir o usuário escolha os seus candidatos e exibir na tela suas escolha." ,"Usando manipulção de elementos HTML com JavaScript e CSS."," Intuitivo e de fácil interação."] ,
     linkgit: 'https://github.com/thiag519/projeto-urna.git',
     linkdeploy: 'https://thiag519.github.io/projeto-urna/'
   },
   { id:2,
     titulo:'Jogo da Velha',
     imagem:'projetos/Jogo-da-Velha.jpeg',
-    descricao:'Este projeto é uma versão digital do jogo da velha, desenvolvido com HTML, CSS e JavaScript. O jogo permite que dois usuários joguem em um mesmo dispositivo, alternando entre os jogadores.',
+    descricao:['Permite que um ou dois usuários divirtam-se com um simples jogo da velha', 'Utilizando lógica de programação com JavaScript', 'Fácil interação e boa performance'],
     linkgit:'https://github.com/thiag519/jogo-da-velha.git',
     linkdeploy:'https://thiag519.github.io/jogo-da-velha/'
   },
    { id:3,
     titulo:'Pagina Starbucks',
     imagem:'projetos/Pagina-Starbucks.jpeg',
-    descricao:'Este projeto é uma recriação da página inicial do site da Starbucks, desenvolvido com HTML e CSS. O site apresenta um design responsivo ultilizando grid, permitindo que os usuários visualizem as informações sobre a empresa.',
+    descricao:['Cópia do site da Starbucks para por em prática conhecimento em grids', 'Utilizando CSS com Grids para criar interface responsiva e moderna', 'Layout Responsividade'],
     linkgit:'https://github.com/thiag519/c-pia-starbucks.git',
     linkdeploy:'https://thiag519.github.io/c-pia-starbucks/'
   },
    { id:4,
-    titulo:'Pagina Web',
-    imagem:'projetos/Pagina-web.jpeg',
-    descricao:' Este projeto é uma recriação de uma página web, desenvolvido com HTML e CSS.  O site apresenta um design responsivo, permitindo que os usuários visualizem as informações  sobre a empresa.',
-    linkgit:'https://github.com/thiag519/site-web.git',
-    linkdeploy:'https://thiag519.github.io/site-web/home.html'
-  },
-   { id:5,
     titulo:'Pizzaria',
     imagem:'projetos/Pizzas.PNG',
-    descricao:'Este projeto consiste em um catálogo interativo de pizzas  para uma pizzaria, desenvolvido ultilizando HTML5, CSS3 e JavaScript. O site apresenta um design responsivo, permitindo que os usuários visualizem as opçôes de pizzas, consultem os preços e adicione itens ao carrinho.',
+    descricao:['Um catálogo de pizzas interativo, possibilita que o usuário escolha o sabor e tamanho da sua pizza e adicione no carrinho', 'Utilizando HTML, CSS e JavaScript', 'Lógica para cálcular os preços com base nos tamanhos e quantidade'],
     linkgit:'https://github.com/thiag519/projeto_pizza.git',
     linkdeploy:'https://thiag519.github.io/projeto_pizza/'
   },
    { id:6,
     titulo:'Quiz Dev',
     imagem:'projetos/Quiz-Dev.jpeg',
-    descricao:'Este projeto é um quiz de perguntas e respostas sobre desenvolvimento web, desenvolvido com HTML, CSS e JavaScript. O quiz apresenta perguntas de múltipla escolha e permite que os usuários testem seus conhecimentos sobre o assunto.',
+    descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tenho um resultado no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização e lógica'],
     linkgit:'https://github.com/thiag519/quiz-javascript.git',
     linkdeploy:'https://thiag519.github.io/relogio-analogico/'
   },
    { id:7,
     titulo:'Calculadora IMC',
     imagem:'projetos/IMC.PNG',
-    descricao:'Este projeto é uma calculadora de Índice de Massa Corporal (IMC) interativa, desenvolvida com React, CSS e TypeScript. Ele permite que os usuários insiram seu peso e altura para calcular automaticamente o IMC, fornecendo também uma análise da faixa correspondente (ex: abaixo do peso, saudável, sobrepeso). O design é funcional e responsivo, garantindo uma experiência intuitiva e agradável ',
+    descricao:['Calculadora de IMC onde o usuário preenche seu peso e altura e resebe uma informaçao sobre como esta seu IMC','Interatividade desenvolvida com React, CSS e TypeScript','Componentização utilizando React e TypeScript'],
     linkgit:'https://github.com/thiag519/react-calc-imc.git',
     linkdeploy:'https://react-calc-imc-delta.vercel.app/'
   }
 ]
+  /*{ id:4,
+    titulo:'Pagina Web',
+    imagem:'projetos/Pagina-web.jpeg',
+    descricao:' Este projeto é uma recriação de uma página web, desenvolvido com HTML e CSS.  O site apresenta um design responsivo, permitindo que os usuários visualizem as informações  sobre a empresa.',
+    linkgit:'https://github.com/thiag519/site-web.git',
+    linkdeploy:'https://thiag519.github.io/site-web/home.html'
+  },*/

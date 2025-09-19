@@ -81,7 +81,9 @@ projetos.forEach((item, index) => {
 
   projetoItem.querySelector('.projeto-title h2').textContent = item.titulo;
   projetoItem.querySelector('.projeto-image img').src = item.imagem;
-  projetoItem.querySelector('.projeto-testo p').textContent = item.descricao;
+item.descricao.map(e => {
+  projetoItem.querySelector('.projeto-testo').innerHTML += `<li>${e}</li>`;
+});
   projetoItem.querySelector('.projeto-link-git a').href = item.linkgit;
   projetoItem.querySelector('.projeto-link-deploy a').href = item.linkdeploy;
 

@@ -7,16 +7,6 @@
     scroll-behavior: smooth;
 }
 
-/* <weight>: Use a value from 100 to 700*/
-/* <uniquifier>: Use a unique and descriptive class name*/
-
-.josefin-sans-uniquifier {
-    
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
 :root {
     --color-primary: #4b4b4b;
     --color-secondary: #9eafa9;
@@ -36,6 +26,8 @@
 
 3- criar modal para projetos
 10- no sobre mim, criar timeline
+11- Criar algo em contatos mais chamativo com um botão de contato ou uma area para enviar email
+12- Criar função que altera o active do nav a medida que rolar a tela
 */
 ::-webkit-scrollbar{
     width: 0px;
@@ -111,7 +103,6 @@ header{
     width: 100%;
     height: auto;
     box-shadow: 1px 1px 3px var(--color-background) ;
-    background-color: aqua;
 }
 .about-name {
     display: flex;
@@ -201,7 +192,7 @@ nav li{
 #banner {
     background-color: #4b4b4b;
     height: calc(100vh - 100px);
-    width: 85%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -344,7 +335,7 @@ nav a{
 #banner2 {
     background-color: #4b4b4b;
     /*height: calc(100vh );*/
-    width: 85%;
+    width: 80%;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
@@ -384,7 +375,6 @@ nav a{
     position: relative;
     padding-left: 30px;
     border-left: 3px solid var(--color-distaque);
-    /* cor da linha */
 }
 
 .timeline-item {
@@ -423,7 +413,7 @@ nav a{
 #banner3 {
     background-color: #4b4b4b;
     height: calc(100vh );
-    width: 85%;
+    width: 80%;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -459,7 +449,7 @@ nav a{
 /* projetos*/
 #banner4 {
     background-color:var(--color-primary);
-    width: 85%;
+    width: 80%;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -488,6 +478,7 @@ nav a{
     display: none;
     flex-direction: column;
     height:50vh ;
+    max-width: 450px;
     width: 100%;
 }
 .projeto-title {
@@ -505,11 +496,21 @@ nav a{
     text-decoration: none;  
 }
 
-.projeto-testo p {
-    text-align: center;
-    padding: 10px 25px 0px 0px;
+.projeto-testo {
+    text-align: start;
+    height: 120px;
+    /*padding: 10px 25px 0px 0px;*/
+    /*font-size: 80%;*/
+    width: 100%;
+    /*text-shadow: 1px 2px 3px var(--color-background);*/
+}
+.projeto-testo li {
+    text-align: start;
+    /*height: 100px;*/
+    padding: 10px 0px 0px 0px;
     font-size: 80%;
     width: 100%;
+    margin-left: 10px;
     text-shadow: 1px 2px 3px var(--color-background);
 }
 .projetos-links {
@@ -520,7 +521,9 @@ nav a{
     width: 100%;
     height: 80px;
 }
-
+.projetos-links a {
+    color: var(--color-background);
+}
 .projeto-link-git {
     display: flex;
     height: 40px;
@@ -529,7 +532,7 @@ nav a{
     align-items: center;
     justify-content: center;
     background-color:var(--color-distaque);
-    text-shadow: 1px 1px 3px var(--color-background);
+    /*text-shadow: 1px 1px 3px var(--color-background);*/
     box-shadow: 1px 3px 10px var(--color-background);
 }
 .projeto-link-deploy {
@@ -540,7 +543,7 @@ nav a{
     align-items: center;
     justify-content: center;
     background-color: var(--color-distaque);
-    text-shadow: 1px 1px 3px var(--color-background);
+    /*text-shadow: 1px 1px 3px var(--color-background);*/
     box-shadow: 1px 3px 10px var(--color-background);
 }
 .area {
@@ -1068,13 +1071,18 @@ nav a{
         text-decoration: none;
     }
     
-    .projeto-testo p {
-        text-align: center;
-        padding: 10px 25px 0px 0px;
-        font-size: 70%;
-        width: 100%;
+    .projeto-testo li {
+        text-align: start;
+        padding: 10px 0px 0px 0px;
+        font-size: 80%;
         text-shadow: 1px 1px 3px var(--color-background);
     }
+         .projeto-testo  {
+             text-align: start;
+             /*padding: 10px 0px 0px 0px;*/
+             margin-left: 10px;
+             width: 90%;
+         }
 
     .area {
         display: block;
