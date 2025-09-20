@@ -30,7 +30,7 @@ const projetos = [
    { id:6,
     titulo:'Quiz Dev',
     imagem:'projetos/Quiz-Dev.jpeg',
-    descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tenho um resultado no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização e lógica'],
+    descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tenho um resultado no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização, lógica e paginação'],
     linkgit:'https://github.com/thiag519/quiz-javascript.git',
     linkdeploy:'https://thiag519.github.io/relogio-analogico/'
   },

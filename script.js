@@ -91,9 +91,25 @@ item.descricao.map(e => {
   area.appendChild(projetoItem);
 });
 
-// Criar um botao fixo 
+// Criar funçao que observa o scroll para por o active na section que estiver sendo exibida
+/*
+const section = document.querySelectorAll('section');
 
+const obs = new IntersectionObserver((entradas, index) => {
+  entradas.forEach(entre => {
+    if (entre.isIntersecting) {
+     console.log(index.root, entre)
+    } else {
+      //console.log("Saiu da tela:", entre.target);
+    }
+  });
+}, { threshold: 0.5 });
 
+section.forEach((el, idx)=> obs.observe(el, idx));
+*/
+
+//window.addEventListener('scroll', activeSection )
+//console.log(scrollX)
 
 //criar animação no nome e add um efeito no mouse
     

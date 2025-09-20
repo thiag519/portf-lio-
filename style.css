@@ -15,17 +15,9 @@
     --color-background: #1c1c1c;
 }
 /*
-      prioridades de 1 a 10
-
-1- mudar fonte, tornar mais visivel
-2- adicionar projetos pessoais
-4- rolagem mais suave
-5- ajustar o feichamento do menu mobile
-6- adicionar imagem proficional
-7- criar animação no nome e add um efeito no mouse
-
-3- criar modal para projetos
-10- no sobre mim, criar timeline
+      prioridades 
+7- criar efeito no mouse
+10- No sobre mim, criar timeline
 11- Criar algo em contatos mais chamativo com um botão de contato ou uma area para enviar email
 12- Criar função que altera o active do nav a medida que rolar a tela
 */
@@ -202,11 +194,10 @@ nav li{
 .image-perfil {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; 
     height: 100%;
-    width:100%; 
-    padding: 5px;
-    
+    width: 100%;
+    margin-top: 10%;
 }
 
 .image-perfil img {
@@ -237,13 +228,29 @@ nav li{
     padding: 5px;
     font-size: 50px; 
     position: relative;
+    padding-top: 40px;
 }
 .complemento-decricao {
-    margin-top: 10px;
-    font-size: 23px;
+    margin-top: 30px;
+    font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.contact-me {
+    display: flex;
+    align-items: center;
+    font-size: 40%; 
+    margin-top: 40px;
+    height: 50px;
+    max-width: 450px;
+    padding: 5px;
+    /*background-color:var(--color-distaque);*/
+    /*color: ;*/
+    /*text-shadow:none;*/
+    border-radius: 7px;
+    border: 2px solid var(--color-distaque);
+    gap: 10px;
+    text-decoration:none;
+}
 .area-contatos {
     /* width: 170px; */
     /* height: auto; */
@@ -290,13 +297,14 @@ nav li{
 
 .about-text {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    /*justify-content: center;*/
+    /*align-items: start;*/
     flex-direction: column;
     height: 100%;
     width: 80%;
     font-size: 100%;
     text-shadow: 1px 1px 3px var(--color-background);
+    padding-top: 40px;
 }
 .about-name-area {
     display: flex;
@@ -568,6 +576,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     width: 100%;
     height: 90%;
     background-color: var(--color-primary);
@@ -585,32 +594,42 @@ nav a{
   }
   .email {
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding-top:10px ;
-    background-color: var(--color-background);
+    text-align: start;
+    font-size: 13px;
+    /*flex-direction: column;*/
+    /*padding-top:10px ;*/
     width: 100%;
-    height: 30%;
+    /*height: 30%;*/
+    opacity: 0.4;
   }
-   .curriculo {
-       display: flex;
-       text-align: center;
-       flex-direction: column;
-       padding-top: 10px;
-       background-color: var(--color-background);
-       width: 100%;
-      
-   }
-  .email a{
-    padding: 10px; 
-    text-decoration: none;  
-    
-  }
-   .curriculo a {
-       padding: 10px;
-       text-decoration: none;
+.curriculo {
+    display: flex;
+    text-align: start;
+    font-size: 13px;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 100%;   
+    gap: 10px; 
+    opacity: 0.4;
+}
 
+  .email a{
+    padding: 0 20px 0 10px; 
+    text-decoration: none; 
+  }
+   .curriculo a{
+       padding: 0 20px 0 10px;
+       text-decoration: none;
    }
+        .email img {
+            padding: 0 10px 0 10px;
+            text-decoration: none;
+        }
+    
+        .curriculo img{
+            padding: 0 10px 0 10px;
+            text-decoration: none;
+        }
   .img-git{
     color: var(--color-background);
     background-color: white;
@@ -626,6 +645,93 @@ nav a{
     align-items: center;
     flex-direction: column-reverse;
     justify-content: space-around;
+}
+.copyright {
+    font-size: 12px;
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+.contact-area {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-background);
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-area-icons {
+    margin-top: 40px;
+    width: 100%;
+}
+.icons-area {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+.area-send-message {
+    height: 100%;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.area-send-message h1{
+    height: 100px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.area-send-message label {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    margin: 10px;
+}
+.area-send-message input{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: var(--color-secondary);
+    font-size: x-large;
+}
+
+.area-send-message textarea {
+    width: 90%;
+    height: 110px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: var(--color-secondary);
+    font-size: large;
+    box-sizing: border-box;
+}
+.area-send-message button {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: var(--color-distaque);
+    color: var(--color-background);
 }
   @media (max-width:1000px) and (min-width:651px){
     .header {
@@ -769,17 +875,20 @@ nav a{
         flex-direction: column; 
         font-size:x-large;
         height: 100%;
-        width: 70%;   
+        width: 70%;  
+         
     }
     .about-text {
         display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         height: 100%;
         width: 94%;
         font-size: 35px;
+        /* padding: 20px; */
         text-align: start;
+        padding-top: 0px;
+        flex-direction: column;
     }
         .projeto-1 .projeto-image img {
             flex: 1;
