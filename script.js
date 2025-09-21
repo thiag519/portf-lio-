@@ -116,8 +116,23 @@ function handleActiveSection() {
     };
   });
 };
+window.addEventListener('scroll', handleActiveSection);
 
-window.addEventListener('scroll', handleActiveSection)
+// Limpar campo de input e textarea depois do envio 
+let input = document.querySelectorAll('.form input');
+//console.log(input)
+let textarea = document.querySelector('.form textarea');
+//console.log(textarea)
+
+function ClaerInputAndTextarea() {
+  setTimeout( () => {
+    input.forEach(e => e.value = '');
+    textarea.value = '';
+  }
+  ,1000)
+  
+  
+}
 
 /*
 const section = document.querySelectorAll('section');

@@ -24,9 +24,9 @@
 ::-webkit-scrollbar{
     width: 0px;
 }
-.slider{
-    animation: slider 9s infinite linear;
-}
+/*.slider{
+    animation: slider 120s infinite linear;
+}*/
 .pisca {
     animation: linear pisca 0.7s infinite;
     transition: none;
@@ -41,8 +41,8 @@
 }
 
 @keyframes slider {
-    from{left:-100dvw;}
-    to{left: 100dvw;}
+    from{left:-200dvw;}
+    to{left: 200dvw;}
 }
 @keyframes writing {
     from { width: 0ch;}
@@ -420,7 +420,7 @@ nav a{
 /* habilidades*/
 #banner3 {
     background-color: #4b4b4b;
-    height: calc(100vh );
+    /*height: calc(100vh );*/
     width: 80%;
     display: flex;
     text-align: center;
@@ -433,27 +433,41 @@ nav a{
     display: flex;
     overflow: hidden; 
     width: 100%;
-    height: 75%;
+    /*height: 75%;*/
     align-items: center;
     justify-content: center;
 }
 .area-skills-width{
+    margin-top: 30px;
     height: auto;
     display: flex;
     width: 100dvw;
     transition: all ease 1s;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    position: relative;
+    flex-wrap: wrap;
+    /*position: relative;*/
 }
 .skill{
     text-shadow: 0px 3px 3px var(--color-primary);
     height: 100%;
     width: 12vw;
-    margin: 5px; 
+    margin: 20px; 
     position:inherit;
 }
+ .skill-description {
+     padding: 10px 0;
+     font-size: 14px;
+     text-align: start;
+ }
 
+ .skill-description strong {
+     padding: 10px 0;
+     font-size: 16px;
+     text-align: start;
+     color: var(--color-distaque);
+ }
 /* projetos*/
 #banner4 {
     background-color:var(--color-primary);
@@ -711,8 +725,9 @@ nav a{
     background-color: var(--color-secondary);
     font-size: 18px;
     outline: none;
-    color: var(--color-background);
+    color: var(--color-primary);
     opacity: 0.8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .area-send-message textarea {
@@ -727,7 +742,8 @@ nav a{
     font-size: 15px;
     box-sizing: border-box;
     outline: none;
-    color: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .area-send-message button {
     width: 90%;
@@ -739,6 +755,10 @@ nav a{
     background-color: var(--color-distaque);
     color: var(--color-background);
     padding: 5px;
+    cursor: pointer;
+}
+.area-send-message button:hover {
+    opacity: 0.7;
 }
   @media (max-width:1000px) and (min-width:651px){
     .header {
@@ -805,19 +825,33 @@ nav a{
     }
     .area-skills-width {
         height: auto;
+        margin-top: 20px;
         display: flex;
         width: auto;
         transition: allease 1s;
         flex-direction: row;
-        flex-wrap: nowrap;
-        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
     }
     .skill {
         text-shadow: 0px 3px 3px var(--color-background);
         height: 100%;
-        width: 12vw;
-        margin: 5px;
+        width: 20vw;
+        margin: 20px;
         position: inherit;
+    }
+    .skill-description {
+        padding: 10px 0;
+        font-size: 12px;
+        text-align: start;
+    }
+    .skill-description strong {
+        padding: 10px 0;
+        font-size: 14px;
+        text-align: start;
+        color: var(--color-distaque);
     }
    /* #banner2{
         background-color: var(--color-primary);
@@ -944,7 +978,7 @@ nav a{
 
 @media (max-width:650px) and (min-width:0px) { 
     @keyframes slider {
-        from{left:-140vw;}
+        from{left:-200vw;}
         to{left: 200vw;}
     }
     *{
@@ -1004,7 +1038,7 @@ nav a{
         width: 100%;
         height: 90vh;
         background-color:var(--color-primary);
-        transition-duration:3s;
+        /*transition-duration:3s;*/
         
        /* */
     }
@@ -1021,7 +1055,7 @@ nav a{
         z-index: 2;  
         width: 80%;
         text-align:start;
-        transition-duration: 2s;
+        /*transition-duration: 2s;*/
     }
     .active a {
         background-color: var(--color-distaque);
@@ -1059,7 +1093,7 @@ nav a{
     }
     #banner {
         background-color: var(--color-primary);
-       height: calc(100vh);
+        height: calc(100vh);
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1083,9 +1117,9 @@ nav a{
         border-radius: 0;
     }
     
-        .about-name {
-            letter-spacing: 3.7px;
-        }
+    .about-name {
+        letter-spacing: 3.7px;
+    }
 
     .about-perfil {
         display: flex;
@@ -1140,29 +1174,42 @@ nav a{
     /* segunda sessao*/
     .area-skills {
         display: flex;
-        overflow: hidden; 
+        /*overflow: hidden; */
         width: 100%;
-        height: 58%;
+        height: auto;
         align-items: center;
         justify-content: center;
         
     }
     .area-skills-width{
-        height: auto;
+        height: 100%;
         display: flex;
-        width: 200vw;
+        width: 100vw;
         transition: all ease 1s;
         flex-direction: row;
-        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         /*position: relative;*/
     }
     .skill{
         text-shadow: 0px 3px 3px var(--color-background);
-        height: 100%;
-        width: 24vw;
-        padding: 5px; 
-        /*position:inherit;*/
-        margin: 0;
+        height:20%;
+        width: 20vw;
+        padding: 10px;
+        margin-top: 10px; 
+       /* position:inherit;*/
+    }
+    .skill-description {
+        padding: 10px 0;
+        font-size: 10px;
+        text-align: start;
+    }
+    .skill-description strong {
+        padding: 10px 0;
+        font-size: 12px;
+        text-align: start;
+        color: var(--color-distaque);
     }
 /*       terceira sessão         */
 
@@ -1195,12 +1242,12 @@ nav a{
         font-size: 80%;
         text-shadow: 1px 1px 3px var(--color-background);
     }
-         .projeto-testo  {
-             text-align: start;
-             /*padding: 10px 0px 0px 0px;*/
-             margin-left: 10px;
-             width: 90%;
-         }
+    .projeto-testo  {
+        text-align: start;
+        /*padding: 10px 0px 0px 0px;*/
+        margin-left: 10px;
+        width: 90%;
+    }
 
     .area {
         display: block;
