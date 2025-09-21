@@ -1,5 +1,6 @@
 let menuMob = document.querySelector('.menu-mobile');
 let mmLines = document.querySelectorAll('.mm-line');
+let currentIndex = 0;
    
   // abrir e feichar o menu
     function menuToggle() {
@@ -39,13 +40,12 @@ let mmLines = document.querySelectorAll('.mm-line');
     }
     // ativar area de clique do menu
     let menuBtn = document.querySelectorAll('.menu li');
-    
     menuBtn.forEach((item) => {
       item.addEventListener('click', () => {
         menuBtn.forEach((item) => {
           item.classList.remove('active');
         });
-        item.classList.add('active');
+        
       });
     });
     // ativar area de clique do menu mobile
@@ -92,6 +92,33 @@ item.descricao.map(e => {
 });
 
 // Criar funçao que observa o scroll para por o active na section que estiver sendo exibida
+
+const section = document.querySelectorAll('section');
+
+function handleActiveSection() {
+  section.forEach((item, index) => {
+    const delimitador = item.getBoundingClientRect() //obter Cliente Delimitador Retângulo
+    //console.log(delimitador.top, delimitador.bottom, window.innerHeight/3)
+    if (delimitador.top <= window.innerHeight && delimitador.bottom >= window.innerHeight) {
+      currentIndex = index;
+      menuBtn.forEach((item, index) => {
+        item.classList.remove('active');
+        if(currentIndex === index) {
+          item.classList.add('active');
+        }
+      });
+      menuBtnMob.forEach((item, index) => {
+         item.classList.remove('active');
+        if(currentIndex === index) {
+          item.classList.add('active');
+        }
+      })
+    };
+  });
+};
+
+window.addEventListener('scroll', handleActiveSection)
+
 /*
 const section = document.querySelectorAll('section');
 
