@@ -850,7 +850,7 @@ nav a{
     .projeto-1 {
         background-color:var(--color-primary);
         height: auto;
-        width: 80%;
+        width: 90%;
         padding: 10px;
         border: 2px solid #9eafa9;
         border-radius: 10px;
@@ -1170,6 +1170,7 @@ nav a{
         background-color: var(--color-primary);
         width: 100%;
         margin-top: 30px;
+        max-width: none;
     }
    
     .projeto-testo p:hover{
@@ -1179,8 +1180,9 @@ nav a{
   
     .projeto-1 .projeto-image img {
         flex: 1;
-        height: 160px;
-        width: 100%;
+        height: 180px;
+        /*width: 100%;*/
+        max-width: 600px;
     }
     
     .projeto-1 a {
@@ -1203,6 +1205,7 @@ nav a{
     .area {
         display: block;
         margin-top: 60px;
+        width: 100%;
     }
     #banner4 {
         background-color: var(--color-primary);
