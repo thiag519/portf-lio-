@@ -743,6 +743,7 @@ nav a{
     box-sizing: border-box;
     outline: none;
     color: var(--color-primary);
+    opacity: 0.8;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .area-send-message button {
@@ -1000,8 +1001,8 @@ nav a{
     }
    
     .header {
-        width: 85%;
-        height: 10vh;
+        width: 86%;
+        height: 12vh;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -1100,7 +1101,26 @@ nav a{
         flex-direction: column; 
         overflow-x: hidden;
     }
-
+    .complemento-decricao {
+        margin-top: 30px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact-me {
+        display: flex;
+        align-items: center;
+        font-size: 40%;
+        margin-top: 10px;
+        height: 50px;
+        /* max-width: 450px; */
+        padding: 5px;
+        /* background-color: var(--color-distaque); */
+        /* text-shadow: none; */
+        border-radius: 7px;
+        border: 2px solid var(--color-distaque);
+        /* gap: 10px; */
+        text-decoration: none;
+    }
     .image-perfil {
         display: flex;
         justify-content: center;
@@ -1130,6 +1150,7 @@ nav a{
         height: calc(100vh - 100px);
         width: 100%;
         text-align: center;
+        margin-top: -25%;
     }
     .about-text {
         display: flex;
@@ -1202,12 +1223,12 @@ nav a{
     }
     .skill-description {
         padding: 10px 0;
-        font-size: 10px;
+        font-size: 12px;
         text-align: start;
     }
     .skill-description strong {
         padding: 10px 0;
-        font-size: 12px;
+        font-size: 14px;
         text-align: start;
         color: var(--color-distaque);
     }
@@ -1218,6 +1239,7 @@ nav a{
         width: 100%;
         margin-top: 30px;
         max-width: none;
+                height: 80vh;
     }
    
     .projeto-testo p:hover{
@@ -1273,14 +1295,83 @@ nav a{
         background-color: var(--color-background);
         overflow-y: hidden;
     }
+    .icons-area {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: -20px;
+    }
+
+    .area-send-message {
+        height: 100%;
+        width: 80%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .area-send-message h1 {
+        height: 100px;
+        width: 80%;
+        max-width: 600px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 100%;
+        padding-bottom: 20px;
+    }
+
+    .area-send-message label {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        border: 0;
+        padding: 5px;
+        margin: 10px;
+        font-size: 80%;
+    }
+
+    .area-send-message input {
+        width: 90%;
+        height: 10%;
+       
+    }
+
+    .area-send-message textarea {
+        width: 90%;
+        height: 30%;
+      
+    }
+
+    .area-send-message button {
+        width: 90%;
+        height: 30px;
+       
+    }
+
+    .contact-area-icons {
+        margin-top: 10px;
+        width: 100%;
+    }
     .contact-iconi{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100%;
+        height: 80%;
         background-color:var(--color-primary);
     }
+    .contact-area {
+        width: 100%;
+        height: 20%;
+    }
+
 
     footer #footer-contact {
         position:relative;
