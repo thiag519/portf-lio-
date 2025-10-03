@@ -999,10 +999,19 @@ nav a{
     nav ul{
         display: none;
     }
+        .logo a img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            clip-path: circle(50%);
+            position: static;
+            object-fit: cover;
+            background-color: var(--color-distaque);
+        }
    
     .header {
         width: 86%;
-        height: 12vh;
+        height: 10vh;
         justify-content: space-between;
         display: flex;
         align-items: center;
