@@ -98,8 +98,9 @@ const section = document.querySelectorAll('section');
 function handleActiveSection() {
   section.forEach((item, index) => {
     const delimitador = item.getBoundingClientRect() //obter Cliente Delimitador Retângulo
-    //console.log(delimitador.top, delimitador.bottom, window.innerHeight/3)
-    if (delimitador.top <= window.innerHeight && delimitador.bottom >= window.innerHeight) {
+    console.log(delimitador.top, delimitador.bottom, window.innerHeight)
+    console.log(index)
+    if (delimitador.top <= window.innerHeight/3 && delimitador.bottom >= window.innerHeight/3) {
       currentIndex = index;
       menuBtn.forEach((item, index) => {
         item.classList.remove('active');
