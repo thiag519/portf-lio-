@@ -1,17 +1,17 @@
 const projetos = [
   { id:1, 
+    titulo:'Salão de Beleza',
+    imagem: 'projetos/Império-da-Beleza.PNG', 
+    descricao: ["Desafio: Criar um site moderno para apresentar serviços e facilitar o contato com clientes." ,"Desenvolvido com TypeScript, React, Tailwind CSS e Next.js, priorizando design responsivo e código versionado com Git."," Resultado: O salão ganhou uma presença digital profissional, e o projeto reforçou meu domínio em desenvolvimento front-end moderno."] ,
+    linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
+    linkdeploy: 'projetos/Império-da-Beleza.PNG'
+  },
+  { id:2, 
     titulo:'Urna Eletronica',
     imagem: 'projetos/Urna.PNG', 
     descricao: [" Permitir o usuário escolha os seus candidatos e exibir na tela suas escolha." ,"Usando manipulção de elementos HTML com JavaScript e CSS."," Intuitivo e de fácil interação."] ,
     linkgit: 'https://github.com/thiag519/projeto-urna.git',
     linkdeploy: 'https://thiag519.github.io/projeto-urna/'
-  },
-  { id:2,
-    titulo:'Jogo da Velha',
-    imagem:'projetos/Jogo-da-Velha.jpeg',
-    descricao:['Permite que um ou dois usuários divirtam-se com um simples jogo da velha', 'Utilizando lógica de programação com JavaScript', 'Fácil interação e boa performance'],
-    linkgit:'https://github.com/thiag519/jogo-da-velha.git',
-    linkdeploy:'https://thiag519.github.io/jogo-da-velha/'
   },
    { id:3,
     titulo:'Pagina Starbucks',
@@ -27,14 +27,14 @@ const projetos = [
     linkgit:'https://github.com/thiag519/projeto_pizza.git',
     linkdeploy:'https://thiag519.github.io/projeto_pizza/'
   },
-   { id:6,
+   { id:5,
     titulo:'Quiz Dev',
     imagem:'projetos/Quiz-Dev.jpeg',
     descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tenho um resultado no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização, lógica e paginação'],
     linkgit:'https://github.com/thiag519/quiz-javascript.git',
     linkdeploy:'https://thiag519.github.io/relogio-analogico/'
   },
-   { id:7,
+   { id:6,
     titulo:'Calculadora IMC',
     imagem:'projetos/IMC.PNG',
     descricao:['Calculadora de IMC onde o usuário preenche seu peso e altura e resebe uma informaçao sobre como esta seu IMC','Interatividade desenvolvida com React, CSS e TypeScript','Componentização utilizando React e TypeScript'],
@@ -48,4 +48,12 @@ const projetos = [
     descricao:' Este projeto é uma recriação de uma página web, desenvolvido com HTML e CSS.  O site apresenta um design responsivo, permitindo que os usuários visualizem as informações  sobre a empresa.',
     linkgit:'https://github.com/thiag519/site-web.git',
     linkdeploy:'https://thiag519.github.io/site-web/home.html'
-  },*/
+  },
+  { id:3,
+    titulo:'Jogo da Velha',
+    imagem:'projetos/Jogo-da-Velha.jpeg',
+    descricao:['Permite que um ou dois usuários divirtam-se com um simples jogo da velha', 'Utilizando lógica de programação com JavaScript', 'Fácil interação e boa performance'],
+    linkgit:'https://github.com/thiag519/jogo-da-velha.git',
+    linkdeploy:'https://thiag519.github.io/jogo-da-velha/'
+  },
+  */

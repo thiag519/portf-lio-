@@ -15,7 +15,7 @@
     --color-background: #1c1c1c;
 }
 /*
-      prioridades 
+    Prioridades 
 7- criar efeito no mouse
 10- No sobre mim, criar timeline
 11- Criar algo em contatos mais chamativo com um botão de contato ou uma area para enviar email
@@ -66,7 +66,6 @@
     animation: writing 2.5s steps(13, end)  1s infinite alternate,
                blink 0.7s step-end infinite 
 }
- 
 body{
     margin: 0px;
     padding: 0px;
@@ -126,7 +125,6 @@ header{
     background-color:var(--color-primary);
     z-index: 2;
 }
-
 .logo{
     align-items: center;
     justify-content:flex-start;
@@ -142,7 +140,7 @@ a img{
     object-fit: cover;
     background-color:var(--color-distaque)
 }
- .active { 
+.active { 
     background-color:var(--color-distaque);
     color:var(--color-text);
     text-shadow: 2px 4px 10px var(--color-background);
@@ -163,8 +161,7 @@ nav li{
     width:40px;
     margin-top:40px;
     margin-bottom:40px;
-    margin-right:20px;
-    
+    margin-right:20px; 
 }
 .menu-mobile{
     display: none;  
@@ -199,7 +196,6 @@ nav li{
     width: 100%;
     margin-top: 10%;
 }
-
 .image-perfil img {
     width: 500px;
     height: 500px;
@@ -216,7 +212,6 @@ nav li{
     opacity: 0.5;
    
 }
-
 .about-perfil {
     display: flex;
     justify-content: center;
@@ -267,7 +262,6 @@ nav li{
 .area-contatos a {
     text-decoration: none;
 }
-
 .contato-git {
     height: 25px;
     width: 25px;
@@ -280,7 +274,6 @@ nav li{
     text-shadow: 1px 1px 3px var(--color-background);
     box-shadow: 1px 10px 20px var(--color-background);
 }
-
 .contato-whatsapp {
     margin-top: 10px;
     height: 23px;
@@ -294,7 +287,6 @@ nav li{
     text-shadow: 1px 1px 3px var(--color-background);
     box-shadow: 1px 10px 20px var(--color-background);
 }
-
 .about-text {
     display: flex;
     /*justify-content: center;*/
@@ -339,7 +331,6 @@ nav a{
 
 /* sobre mim*/
 
-
 #banner2 {
     background-color: #4b4b4b;
     min-height: calc(100vh );
@@ -350,30 +341,25 @@ nav a{
     /*overflow: hidden;*/
     position: relative;
 }
-
 .timeline {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
 }
-
 .timeline h2 {
     text-align: start;
     margin-bottom: 30px;
     font-size: 24px;
 }
-
 .timeline-container {
     position: relative;
     padding-left: 30px;
     border-left: 3px solid var(--color-distaque);
 }
-
 .timeline-item {
     margin-bottom: 25px;
     position: relative;
 }
-
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -386,14 +372,12 @@ nav a{
     /* border: 2px solid #fff; */
     box-shadow: 0 0 0 3px var(--color-secondary);
 }
-
 .timeline-item .year {
     display: inline-block;
     font-weight: bold;
     color: var(--color-distaque);
     margin-bottom: 5px;
 }
-
 .timeline-item p {
     margin: 0;
    /* color: #444;*/
@@ -445,7 +429,6 @@ nav a{
      font-size: 14px;
      text-align: start;
  }
-
  .skill-description strong {
      padding: 10px 0;
      font-size: 16px;
@@ -479,11 +462,10 @@ nav a{
     height: auto;
     width: 100%;
 }
-
 .projeto-1 {
     display: none;
     flex-direction: column;
-    height:50vh ;
+    height:60vh ;
     max-width: 450px;
     width: 100%;
 }
@@ -504,7 +486,7 @@ nav a{
 
 .projeto-testo {
     text-align: start;
-    height: 120px;
+    height: 160px;
     /*padding: 10px 25px 0px 0px;*/
     /*font-size: 80%;*/
     width: 100%;
@@ -560,7 +542,7 @@ nav a{
 }
   /*footer*/
 
-  footer{
+footer{
     height:calc(100vh - 10vh); 
     width:100%;
     display: flex; 
@@ -569,28 +551,26 @@ nav a{
     background-color: var(--color-primary);
     overflow: hidden;
     position: relative;
-  }
-  .contact-iconi{
+}
+.contact-iconi{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100%;
     height: 90%;
-    background-color: var(--color-primary);
-    
-  }
-  .contact-iconi a {
+    background-color: var(--color-primary);  
+}
+.contact-iconi a {
     padding: 5px;
-    
-  }
-  .contact-iconi a:hover {
+}
+.contact-iconi a:hover {
     padding: 5px;
     cursor: pointer;
     opacity: 0.5;
     margin-top:10px;
-  }
-  .email {
+}
+.email {
     display: flex;
     text-align: start;
     font-size: 13px;
@@ -599,7 +579,7 @@ nav a{
     width: 100%;
     /*height: 30%;*/
     opacity: 0.4;
-  }
+}
 .curriculo {
     display: flex;
     text-align: start;
@@ -610,33 +590,31 @@ nav a{
     gap: 10px; 
     opacity: 0.4;
 }
-
-  .email a{
+.email a{
     padding: 0 20px 0 10px; 
     text-decoration: none; 
-  }
-   .curriculo a{
-       padding: 0 20px 0 10px;
-       text-decoration: none;
-   }
-        .email img {
-            padding: 0 10px 0 10px;
-            text-decoration: none;
-        }
-    
-        .curriculo img{
-            padding: 0 10px 0 10px;
-            text-decoration: none;
-        }
-  .img-git{
+}
+.curriculo a{
+    padding: 0 20px 0 10px;
+    text-decoration: none;
+}
+.email img {
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+}
+.curriculo img{
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+}
+.img-git{
     color: var(--color-background);
     background-color: white;
     border-radius: 50%;
     width: 19px;
     padding: 0;
     border:white 4px solid ;
-  }
-  footer #footer-contact {
+}
+footer #footer-contact {
     display: flex;
     width: 100%;
     height: 100%;
@@ -674,16 +652,19 @@ nav a{
 }
 .area-send-message {
     height: 100%;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    form {
+        width: 100%;
+    }
 }
 .area-send-message h1{
     height: 100px;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     display: flex;
     align-items: center;
@@ -691,12 +672,13 @@ nav a{
     margin-top: 20px;
 }
 .area-send-message label {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 60px;
     border-radius: 5px;
     border: 0;
     padding: 5px;
     margin: 10px;
+    display: inline-block;
 }
 .area-send-message input{
     width: 90%;
@@ -713,7 +695,6 @@ nav a{
     opacity: 0.8;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
 .area-send-message textarea {
     width: 90%;
     height: 110px;
@@ -735,7 +716,7 @@ nav a{
     height: 40px;
     border-radius: 5px;
     border: 0;
-    margin: 10px;
+    margin: 20px 0 20px 24px;
     box-sizing: border-box;
     background-color: var(--color-distaque);
     color: var(--color-background);
@@ -757,22 +738,20 @@ nav a{
         background-color: var(--color-primary);
         z-index: 2;
     }
-
     .about-name {
         letter-spacing: 3.5px;
     }
-
     .menu{
         padding: 10px;
     }
-        .image-perfil {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            margin-top: 0%;
-        }
+    .image-perfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 0%;
+    }
     .image-perfil img {
         width: 340px;
         height:340px;
@@ -791,8 +770,7 @@ nav a{
         flex-wrap: nowrap;
         text-wrap: nowrap;
         width: 60%;
-        height: auto;
-      
+        height: auto; 
     }
     .bar {
         font-size: 25px;
@@ -805,7 +783,6 @@ nav a{
         flex-wrap: nowrap;
         padding:0;
     }
-
     .about-me {
         display: flex;
         justify-content: center;
@@ -824,8 +801,7 @@ nav a{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
     .skill {
         text-shadow: 0px 3px 3px var(--color-background);
@@ -864,7 +840,6 @@ nav a{
         justify-content: space-between;
         overflow: hidden;
     }
-
     .area-projeto {
         display: flex;
         flex-wrap: wrap;
@@ -887,8 +862,7 @@ nav a{
     .projeto-1 a img {
         background-color: var(--color-secondary);
         height:30%;
-        width: 95%;
-        
+        width: 95%;  
     }
     .projeto-testo p {
         text-align: center;
@@ -899,8 +873,6 @@ nav a{
         color:var(--color-text);
         position: relative;
     }
- 
-
     .about-perfil {
         display: flex;
         justify-content: center;
@@ -909,8 +881,7 @@ nav a{
         font-size:x-large;
         height: 100%;
         width: 70%; 
-        padding-top: 0; 
-         
+        padding-top: 0;   
     }
     .about-text {
         display: flex;
@@ -924,24 +895,21 @@ nav a{
         padding-top: 0px;
         flex-direction: column;
     }
-        .projeto-1 .projeto-image img {
-            flex: 1;
-            height: 150px;
-            width: 100%;
-        }
-    
-        .projeto-1 a {
-            text-decoration: none;
-        }
-    
-        .projeto-testo p {
-            text-align: center;
-            padding: 10px 25px 0px 0px;
-            font-size: 70%;
-            width: 100%;
-            text-shadow: 1px 1px 3px var(--color-background);
-        }
-
+    .projeto-1 .projeto-image img {
+        flex: 1;
+        height: 150px;
+        width: 100%;
+    }
+    .projeto-1 a {
+        text-decoration: none;
+    }
+    .projeto-testo p {
+        text-align: center;
+        padding: 10px 25px 0px 0px;
+        font-size: 70%;
+        width: 100%;
+        text-shadow: 1px 1px 3px var(--color-background);
+    }
     .area {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -977,7 +945,6 @@ nav a{
     *{
         scroll-behavior: auto;
     }
-
     #header{
     display: flex;
     justify-content: space-around;
@@ -987,20 +954,19 @@ nav a{
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
+    }
     nav ul{
         display: none;
     }
-        .logo a img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            clip-path: circle(50%);
-            position: static;
-            object-fit: cover;
-            background-color: var(--color-distaque);
-        }
-   
+    .logo a img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        clip-path: circle(50%);
+        position: static;
+        object-fit: cover;
+        background-color: var(--color-distaque);
+    }
     .header {
         width: 86%;
         height: 10vh;
@@ -1035,7 +1001,6 @@ nav a{
         transition-duration:5s;
         animation:0.5s openMenu linear ;
     }
-    
     .menu-mobile ul {
         width: 100%;
         height: 90vh;
@@ -1240,25 +1205,20 @@ nav a{
         width: 100%;
         margin-top: 30px;
         max-width: none;
-                height: 80vh;
+        height: 70vh;
     }
-   
     .projeto-testo p:hover{
         transition: 0.5s linear;
     }
-    
-  
     .projeto-1 .projeto-image img {
         flex: 1;
         height: 180px;
         /*width: 100%;*/
         max-width: 600px;
     }
-    
     .projeto-1 a {
         text-decoration: none;
     }
-    
     .projeto-testo li {
         text-align: start;
         padding: 10px 0px 0px 0px;
@@ -1271,7 +1231,6 @@ nav a{
         margin-left: 10px;
         width: 90%;
     }
-
     .area {
         display: block;
         margin-top: 60px;
@@ -1284,8 +1243,7 @@ nav a{
         display: flex;
         text-align: center;
         flex-direction: column;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
     }
     footer{
         height: calc(100vh); 
@@ -1305,7 +1263,6 @@ nav a{
         flex-wrap: wrap;
         margin-bottom: -20px;
     }
-
     .area-send-message {
         height: 100%;
         width: 80%;
@@ -1315,7 +1272,6 @@ nav a{
         justify-content: center;
         flex-direction: column;
     }
-
     .area-send-message h1 {
         height: 100px;
         width: 80%;
@@ -1327,35 +1283,27 @@ nav a{
         font-size: 100%;
         padding-bottom: 20px;
     }
-
     .area-send-message label {
-        width: 90%;
-        height: 30px;
+        width: 100%;
+        height: 60px;
         border-radius: 5px;
         border: 0;
         padding: 5px;
         margin: 10px;
         font-size: 80%;
     }
-
     .area-send-message input {
         width: 90%;
-        height: 10%;
-       
+        height: 80%;
     }
-
     .area-send-message textarea {
         width: 90%;
-        height: 30%;
-      
+        height: 170%; 
     }
-
     .area-send-message button {
         width: 90%;
-        height: 30px;
-       
+        height: 40px;  
     }
-
     .contact-area-icons {
         margin-top: 10px;
         width: 100%;
@@ -1372,8 +1320,6 @@ nav a{
         width: 100%;
         height: 20%;
     }
-
-
     footer #footer-contact {
         position:relative;
         display: flex;
