@@ -2,7 +2,7 @@ const projetos = [
   { id:1, 
     titulo:'Salão de Beleza',
     imagem: 'projetos/Império-da-Beleza.PNG', 
-    descricao: ["Desafio: Criar um site moderno para apresentar serviços e facilitar o contato com clientes." ,"Desenvolvido com TypeScript, React, Tailwind CSS e Next.js, priorizando design responsivo e código versionado com Git."," Resultado: O salão ganhou uma presença digital profissional, e o projeto reforçou meu domínio em desenvolvimento front-end moderno."] ,
+    descricao: ["Desafio: Criar um site moderno para apresentar serviços e facilitar o contato com clientes." ,"Solução: Desenvolvido com TypeScript, React, Tailwind CSS e Next.js, priorizando design responsivo e código versionado com Git."," Resultado: O salão ganhou uma presença digital profissional, e o projeto reforçou meu domínio em desenvolvimento front-end moderno."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'projetos/Império-da-Beleza.PNG'
   },

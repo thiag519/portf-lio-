@@ -14,13 +14,6 @@
     --color-text: #ddd;
     --color-background: #1c1c1c;
 }
-/*
-    Prioridades 
-7- criar efeito no mouse
-10- No sobre mim, criar timeline
-11- Criar algo em contatos mais chamativo com um botão de contato ou uma area para enviar email
-12- Criar função que altera o active do nav a medida que rolar a tela
-*/
 ::-webkit-scrollbar{
     width: 0px;
 }
@@ -81,7 +74,7 @@ main {
 header{
     display:flex;
     justify-content:center;
-    height: 100px;
+    height: 80px;
     align-items: center;
     background-color: var(--color-primary);
 }
@@ -113,6 +106,7 @@ header{
     background-color:var(--color-primary);
     margin: 0;
     padding: 0;
+    min-height: 80px;
 }
 .header{
     top: 0;
@@ -124,6 +118,7 @@ header{
     position: fixed;
     background-color:var(--color-primary);
     z-index: 2;
+    min-height: 80px;
 }
 .logo{
     align-items: center;
@@ -187,6 +182,7 @@ nav li{
     justify-content: space-between; 
     position: relative;
     overflow: hidden;
+    min-height: 700px;
 }
 .image-perfil {
     display: flex;
@@ -238,26 +234,19 @@ nav li{
     height: 50px;
     max-width: 450px;
     padding: 5px;
-    /*background-color:var(--color-distaque);*/
-    /*color: ;*/
-    /*text-shadow:none;*/
     border-radius: 7px;
     border: 2px solid var(--color-distaque);
     gap: 10px;
     text-decoration:none;
 }
 .area-contatos {
-    /* width: 170px; */
-    /* height: auto; */
     position: fixed;
     bottom: 0;
     left: 0;
     margin-left: 30px;
     margin-bottom: 30px;
     z-index: 20;
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: flex-end; */
 }
 .area-contatos a {
     text-decoration: none;
@@ -289,8 +278,6 @@ nav li{
 }
 .about-text {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: start;*/
     flex-direction: column;
     height: 100%;
     width: 80%;
@@ -340,6 +327,7 @@ nav a{
     justify-content: space-between;
     /*overflow: hidden;*/
     position: relative;
+    min-height: 700px;
 }
 .timeline {
     max-width: 600px;
@@ -396,6 +384,7 @@ nav a{
     justify-content: space-between;
     overflow: hidden;
     position: relative;
+
 }
 .area-skills {
     display: flex;
@@ -468,6 +457,10 @@ nav a{
     height:60vh ;
     max-width: 450px;
     width: 100%;
+    min-height: 400px;
+    a {
+        text-decoration: none;
+    }
 }
 .projeto-title {
     font-size: small;
@@ -479,11 +472,6 @@ nav a{
     height:200px;
     width: 100%; 
 }
-
-.projeto-1  a  {
-    text-decoration: none;  
-}
-
 .projeto-testo {
     text-align: start;
     height: 160px;
@@ -508,9 +496,9 @@ nav a{
     flex-direction: row;
     width: 100%;
     height: 80px;
-}
-.projetos-links a {
-    color: var(--color-background);
+    a {
+       color: var(--color-background); 
+    }
 }
 .projeto-link-git {
     display: flex;
@@ -520,8 +508,11 @@ nav a{
     align-items: center;
     justify-content: center;
     background-color:var(--color-distaque);
-    /*text-shadow: 1px 1px 3px var(--color-background);*/
     box-shadow: 1px 3px 10px var(--color-background);
+    &:hover {
+        opacity: 0.6;
+        box-shadow: 3px 5px 15px var(--color-background);
+    }
 }
 .projeto-link-deploy {
     display: flex;
@@ -531,8 +522,11 @@ nav a{
     align-items: center;
     justify-content: center;
     background-color: var(--color-distaque);
-    /*text-shadow: 1px 1px 3px var(--color-background);*/
     box-shadow: 1px 3px 10px var(--color-background);
+    &:hover {
+        opacity: 0.6;
+        box-shadow: 3px 5px 15px var(--color-background);
+    }
 }
 .area {
     display: grid;
@@ -551,6 +545,7 @@ footer{
     background-color: var(--color-primary);
     overflow: hidden;
     position: relative;
+    min-height: 800px;
 }
 .contact-iconi{
     display: flex;
@@ -677,7 +672,7 @@ footer #footer-contact {
     border-radius: 5px;
     border: 0;
     padding: 5px;
-    margin: 10px;
+    margin-bottom: 10px;
     display: inline-block;
 }
 .area-send-message input{
@@ -716,7 +711,7 @@ footer #footer-contact {
     height: 40px;
     border-radius: 5px;
     border: 0;
-    margin: 20px 0 20px 24px;
+    margin: 20px 0 20px 15px;
     box-sizing: border-box;
     background-color: var(--color-distaque);
     color: var(--color-background);
@@ -1006,8 +1001,6 @@ footer #footer-contact {
         height: 90vh;
         background-color:var(--color-primary);
         /*transition-duration:3s;*/
-        
-       /* */
     }
     
     .menu-mobile ul li {
@@ -1271,38 +1264,33 @@ footer #footer-contact {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-    .area-send-message h1 {
-        height: 100px;
-        width: 80%;
-        max-width: 600px;
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        margin-top: 20px;
-        font-size: 100%;
-        padding-bottom: 20px;
-    }
-    .area-send-message label {
-        width: 100%;
-        height: 60px;
-        border-radius: 5px;
-        border: 0;
-        padding: 5px;
-        margin: 10px;
-        font-size: 80%;
-    }
-    .area-send-message input {
-        width: 90%;
-        height: 80%;
-    }
-    .area-send-message textarea {
-        width: 90%;
-        height: 170%; 
-    }
-    .area-send-message button {
-        width: 90%;
-        height: 40px;  
+        h1 {
+            align-items: end;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 100%;
+            padding-bottom: 20px;
+        }
+        label {
+            height: 60px;
+            border-radius: 5px;
+            border: 0;
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 80%;
+        }
+        input {
+            width: 90%;
+            height: 80%;
+        }
+        textarea {
+            width: 90%;
+            height: 170%;
+        }
+        button {
+            width: 90%;
+            height: 40px;
+        }
     }
     .contact-area-icons {
         margin-top: 10px;
