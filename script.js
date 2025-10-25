@@ -26,7 +26,8 @@ let currentIndex = 0;
       mmLines[2].classList.toggle('animationLow');
       mmLines[1].classList.toggle('animationMiddle')  ;      
     }
-    // feichar o menu quando clicar em um item no menu
+
+// feichar o menu quando clicar em um item no menu
     function closeMenu() {
       menuMob.style.opacity = '1';
       menuMob.style.animation= "0.3s closeMenu linear ";
@@ -38,7 +39,8 @@ let currentIndex = 0;
       mmLines[2].classList.toggle('animationLow');
       mmLines[1].classList.toggle('animationMiddle');
     }
-    // ativar area de clique do menu
+
+// ativar area de clique do menu
     let menuBtn = document.querySelectorAll('.menu li');
     menuBtn.forEach((item) => {
       item.addEventListener('click', () => {
@@ -48,8 +50,8 @@ let currentIndex = 0;
         
       });
     });
-    // ativar area de clique do menu mobile
-    
+
+// ativar area de clique do menu mobile
     let menuBtnMob = document.querySelectorAll('.menu-mobile li'); 
 
     menuBtnMob.forEach((item) => {
@@ -62,7 +64,6 @@ let currentIndex = 0;
     });
 
 // Criar area de serviço com map em projetos.js
-
 const c = (el) => document.querySelector(el);
 //const cA =(el) => document.querySelectorAll(el);
 
@@ -75,7 +76,8 @@ if (templateProjeto) {
 area.innerHTML = '';
 projetos &&
 projetos.forEach((item, index) => {
-   //criar um clone usando cloneNode()
+
+//criar um clone usando cloneNode()
   let projetoItem = templateProjeto.cloneNode(true);
   projetoItem.style.display = 'flex';
 
@@ -92,7 +94,6 @@ item.descricao.map(e => {
 });
 
 // Criar funçao que observa o scroll para por o active na section que estiver sendo exibida
-
 const section = document.querySelectorAll('section');
 
 function handleActiveSection() {
@@ -131,13 +132,10 @@ function ClaerInputAndTextarea() {
     textarea.value = '';
   }
   ,1000)
-  
-  
 }
 
 /*
 const section = document.querySelectorAll('section');
-
 const obs = new IntersectionObserver((entradas, index) => {
   entradas.forEach(entre => {
     if (entre.isIntersecting) {
@@ -150,7 +148,6 @@ const obs = new IntersectionObserver((entradas, index) => {
 
 section.forEach((el, idx)=> obs.observe(el, idx));
 */
-
 //window.addEventListener('scroll', activeSection )
 //console.log(scrollX)
 
