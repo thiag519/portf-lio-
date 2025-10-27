@@ -9,7 +9,7 @@ const projetos = [
   { id:2, 
     titulo:'Urna Eletronica',
     imagem: 'projetos/Urna.PNG', 
-    descricao: [" Permitir o usuário escolha os seus candidatos e exibir na tela suas escolha." ,"Usando manipulção de elementos HTML com JavaScript e CSS."," Intuitivo e de fácil interação."] ,
+    descricao: [" Permiti o usuário escolher os seus candidatos e exibir na tela suas escolhas." ,"Usando manipulção de elementos HTML com JavaScript e CSS."," Intuitivo e de fácil interação."] ,
     linkgit: 'https://github.com/thiag519/projeto-urna.git',
     linkdeploy: 'https://thiag519.github.io/projeto-urna/'
   },
@@ -30,14 +30,14 @@ const projetos = [
    { id:5,
     titulo:'Quiz Dev',
     imagem:'projetos/Quiz-Dev.jpeg',
-    descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tenho um resultado no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização, lógica e paginação'],
+    descricao:['Quiz dinâmico onde o usuário responde uma série de perguntas de desenvolvimento web e tem o resultado da sua pontução no final','Utilizando HTML, CSS e JavaScript para criar a navegação e calcular a pontuação','Estilização, lógica e paginação'],
     linkgit:'https://github.com/thiag519/quiz-javascript.git',
     linkdeploy:'https://thiag519.github.io/relogio-analogico/'
   },
    { id:6,
     titulo:'Calculadora IMC',
     imagem:'projetos/IMC.PNG',
-    descricao:['Calculadora de IMC onde o usuário preenche seu peso e altura e resebe uma informaçao sobre como esta seu IMC','Interatividade desenvolvida com React, CSS e TypeScript','Componentização utilizando React e TypeScript'],
+    descricao:['Calculadora de IMC onde o usuário preenche seu peso e altura e recebe uma informaçao sobre como esta seu IMC','Interatividade desenvolvida com React, CSS e TypeScript','Componentização utilizando React e TypeScript'],
     linkgit:'https://github.com/thiag519/react-calc-imc.git',
     linkdeploy:'https://react-calc-imc-delta.vercel.app/'
   }
