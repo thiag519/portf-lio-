@@ -4,7 +4,7 @@ const projetos = [
     imagem: 'projetos/Império-da-Beleza.PNG', 
     descricao: ["Desafio: Criar um site moderno para apresentar serviços e facilitar o contato com clientes." ,"Solução: Desenvolvido com TypeScript, React, Tailwind CSS e Next.js, priorizando design responsivo e código versionado com Git."," Resultado: O salão ganhou uma presença digital profissional, e o projeto reforçou meu domínio em desenvolvimento front-end moderno."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
-    linkdeploy: 'projetos/Império-da-Beleza.PNG'
+    linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
   { id:2, 
     titulo:'Urna Eletronica',
