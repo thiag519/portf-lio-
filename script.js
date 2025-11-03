@@ -120,39 +120,43 @@ function handleActiveSection() {
 };
 window.addEventListener('scroll', handleActiveSection);
 
-// Limpar campo de input e textarea depois do envio 
-let input = document.querySelectorAll('.form input');
-//console.log(input)
-let textarea = document.querySelector('.form textarea');
-//console.log(textarea)
 
-function ClaerInputAndTextarea() {
-  setTimeout( () => {
-    input.forEach(e => e.value = '');
-    textarea.value = '';
-  }
-  ,1000)
-}
+// Envio do email
 
-/*
-const section = document.querySelectorAll('section');
-const obs = new IntersectionObserver((entradas, index) => {
-  entradas.forEach(entre => {
-    if (entre.isIntersecting) {
-     console.log(index.root, entre)
-    } else {
-      //console.log("Saiu da tela:", entre.target);
+const form = document.querySelector('#form-send');
+const statusMessage = document.querySelector('#status');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = {
+    nome: form.nome.value,
+    email: form.eamil.value,
+    mensagem: form.mensagem.value
+  };
+
+  try {
+    const response = await fetch('https://send-sirf.onrender.com/send', {
+      method: "POST",
+      headers:{"Content-Type": "application/json"},
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+
+    if(result.success) {
+      statusMessage.textContent = "Mensagem enviada com sucesso!";
+      form.reset();
+    }else {
+      statusMessage.textContent = "Erro ao enviar a mensagem. Tente novamente.";
     }
-  });
-}, { threshold: 0.5 });
+  } catch (err) {
+    statusMessage.textContent = "Erro de conexão com o servidor";
+  }
 
-section.forEach((el, idx)=> obs.observe(el, idx));
-*/
-//window.addEventListener('scroll', activeSection )
-//console.log(scrollX)
+});
 
-//criar animação no nome e add um efeito no mouse
-    
+
 
     
            

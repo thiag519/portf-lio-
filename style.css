@@ -678,12 +678,12 @@ footer #footer-contact {
     display: inline-block;
 }
 .area-send-message input{
-    width: 90%;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     border: 0;
     padding: 0 10px;
-    margin: 10px;
+    margin-top: 10px;
     box-sizing: border-box;
     background-color: var(--color-secondary);
     font-size: 18px;
@@ -693,12 +693,12 @@ footer #footer-contact {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .area-send-message textarea {
-    width: 90%;
+    width: 100%;
     height: 110px;
     border-radius: 5px;
     border: 0;
     padding:10px;
-    margin: 10px;
+    margin-top: 10px;
     resize: none;
     background-color: var(--color-secondary);
     font-size: 15px;
@@ -709,20 +709,30 @@ footer #footer-contact {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .area-send-message button {
-    width: 90%;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: 0;
-    margin: 20px 0 20px 15px;
+    margin-top:15px;
     box-sizing: border-box;
     background-color: var(--color-distaque);
     color: var(--color-background);
     padding: 5px;
     cursor: pointer;
+    margin-left: 4px;
 }
 .area-send-message button:hover {
     opacity: 0.7;
 }
+.mensagem-status {
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--color-text);
+}
+
   @media (max-width:1000px) and (min-width:651px){
     .header {
         width: 85%;
@@ -1277,21 +1287,22 @@ footer #footer-contact {
             height: 60px;
             border-radius: 5px;
             border: 0;
-            padding: 5px;
-            margin-bottom: 10px;
+            /*padding: 5px;*/
+            /*margin-bottom: 10px;*/
             font-size: 80%;
         }
         input {
-            width: 90%;
+            width: 100%;
             height: 80%;
         }
         textarea {
-            width: 90%;
+            width: 100%;
             height: 170%;
         }
         button {
-            width: 90%;
+            width: 100%;
             height: 40px;
+            margin-left: 4px;
         }
     }
     .contact-area-icons {
