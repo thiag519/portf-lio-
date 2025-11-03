@@ -154,6 +154,12 @@ form.addEventListener('submit', async (e) => {
     statusMessage.textContent = "Erro de conexão com o servidor";
   }
 
+  if(statusMessage.textContent !== ''){
+    setInterval(() => {
+      statusMessage.textContent = '';
+  }, 5000);
+  }
+  
 });
 
 
