@@ -134,7 +134,7 @@ form.addEventListener('submit', async (e) => {
     email: form.email.value,
     mensagem: form.mensagem.value
   };
-
+  statusMessage.textContent = "Carregando...";
   try {
     const response = await fetch('https://send-email-liart-eight.vercel.app/send', {
       method: "POST",
