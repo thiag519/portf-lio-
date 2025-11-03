@@ -123,15 +123,15 @@ window.addEventListener('scroll', handleActiveSection);
 
 // Envio do email
 
-const form = document.querySelector('#form-send');
-const statusMessage = document.querySelector('#status');
+const form = document.getElementById('form-send');
+const statusMessage = document.getElementById('status');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const data = {
     nome: form.nome.value,
-    email: form.eamil.value,
+    email: form.email.value,
     mensagem: form.mensagem.value
   };
 
