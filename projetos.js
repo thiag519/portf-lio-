@@ -6,6 +6,13 @@ const projetos = [
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
+   { id:2, 
+    titulo:'Envio de Email',
+    imagem: 'projetos/Area-de-envio.PNG', 
+    descricao: ["Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"API desenvolvida em Node.js + TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, utilizando a API Resend e hospedagem Serverless na Vercel.","Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
+    linkgit: 'https://github.com/thiag519/send-.git',
+    linkdeploy: 'https://thiag519.github.io/portf-lio-/'
+  },
   { id:2, 
     titulo:'Urna Eletronica',
     imagem: 'projetos/Urna.PNG', 
