@@ -69,7 +69,7 @@ const c = (el) => document.querySelector(el);
 
 // Esconde o template antes de clonar e limpa a área antes de popular
 const area = c('.area');
-const templateProjeto = c('.area-projeto .projeto-1');
+const templateProjeto = c('.projeto');
 if (templateProjeto) {
   templateProjeto.style.display = 'none';
 }
@@ -81,13 +81,17 @@ projetos.forEach((item, index) => {
   let projetoItem = templateProjeto.cloneNode(true);
   projetoItem.style.display = 'flex';
 
+  projetoItem.querySelector('.projeto-link a').href = item.linkdeploy;
   projetoItem.querySelector('.projeto-title h2').textContent = item.titulo;
   projetoItem.querySelector('.projeto-image img').src = item.imagem;
-item.descricao.map(e => {
+  projetoItem.querySelector('.projeto-image img').alt = item.titulo;
+  item.descricao.map(e => {
   projetoItem.querySelector('.projeto-testo').innerHTML += ` <li>${e}</li> `;
 });
-  projetoItem.querySelector('.projeto-link-git a').href = item.linkgit;
-  projetoItem.querySelector('.projeto-link-deploy a').href = item.linkdeploy;
+  projetoItem.querySelector('.projetos-links .projetos-link-git a').href = item.linkgit;
+  projetoItem.querySelector('.projetos-links .projetos-link-deploy a').href = item.linkdeploy;
+ 
+
 
   projetoItem.dataset.key = index;
   area.appendChild(projetoItem);

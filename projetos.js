@@ -2,21 +2,21 @@ const projetos = [
   { id:1, 
     titulo:'Salão de Beleza',
     imagem: 'projetos/Império-da-Beleza.PNG', 
-    descricao: ["Desafio: Criar um site moderno para apresentar serviços e facilitar o contato com clientes." ,"Solução: Desenvolvido com TypeScript, React, Tailwind CSS e Next.js, priorizando design responsivo e código versionado com Git."," Resultado: O salão ganhou uma presença digital profissional, e o projeto reforçou meu domínio em desenvolvimento front-end moderno."] ,
+    descricao: ["Desafio: Criar um site institucional que transmitisse profissionalismo e facilitasse o contato com clientes.", "Solução: Desenvolvimento de uma aplicação web moderna com React, Next.js, TypeScript e Tailwind CSS, focada em responsividade, usabilidade e organização do código.", "Resultado: O projeto resultou em uma presença digital mais profissional, melhorando a experiência dos usuários e servindo como base para futuras evoluções do site."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
    { id:2, 
     titulo:'Envio de Email',
     imagem: 'projetos/Area-de-envio.PNG', 
-    descricao: ["Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"API desenvolvida em Node.js + TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, utilizando a API Resend e hospedagem Serverless na Vercel.","Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
+    descricao: ["Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"API desenvolvida em Node.js, Express, Resend(AOI de e-mail), TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, utilizando a API Resend e hospedagem Serverless na Vercel.","Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
     linkgit: 'https://github.com/thiag519/send-.git',
     linkdeploy: 'https://thiag519.github.io/portf-lio-/'
   },
   { id:3, 
     titulo:'Urna Eletronica',
     imagem: 'projetos/Urna.PNG', 
-    descricao: [" Permiti o usuário escolher os seus candidatos e exibir na tela suas escolhas." ,"Usando manipulção de elementos HTML com JavaScript e CSS."," Intuitivo e de fácil interação."] ,
+    descricao: [" Permiti o usuário escolher os seus candidatos, exibir na tela suas escolhas e confirmar seu voto. Conta ainda com area para ver candidados(colinha)" ,"Usando manipulção de elementos HTML com JavaScript e estilizando com CSS."," Intuitivo e de fácil interação. Permitindo armazenar votos, exibir voto e finalizar com o som classico da urna eletronica."] ,
     linkgit: 'https://github.com/thiag519/projeto-urna.git',
     linkdeploy: 'https://thiag519.github.io/projeto-urna/'
   },
@@ -63,4 +63,6 @@ const projetos = [
     linkgit:'https://github.com/thiag519/jogo-da-velha.git',
     linkdeploy:'https://thiag519.github.io/jogo-da-velha/'
   },
+
+
   */
