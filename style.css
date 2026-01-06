@@ -77,7 +77,7 @@ main {
     display: flex;
     justify-content:center;
     height: 8vh;
-    min-height: 40px;
+    min-height: 50px;
     align-items: center;
     background-color:var(--color-background);
     left: 0;
@@ -91,7 +91,7 @@ main {
     top: 0;
     width: 80%;
     height: 8vh;
-    min-height: 40px;
+    min-height: 50px;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -123,15 +123,17 @@ main {
 .logo{
     align-items: center;
     justify-content:flex-start;
-    display:flex; 
+    display:flex;
+    height: 100%;
+    width: 100%; 
 }
 .logo
 a img{
-    width:55px;
-    height: 55px;
+    width:50px;
+    height: 50px;
     border-radius: 50%;
-    clip-path: circle(50%);
-    position:static;
+    /*clip-path: circle(50%);*/
+    
     object-fit: cover;
     background-color:var(--color-distaque)
 }
@@ -185,6 +187,74 @@ nav li{
 
 /*divisores*/
 
+header .after {
+    background-color: var(--color-background);
+    height: calc(5vh);
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -2.5vh;
+    left: 0;
+    z-index: 10;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#banner .after {
+    background-color: var(--color-background);
+    height: calc(5vh);
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+    z-index: 10;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#banner2 .after {
+    background-color: var(--color-background);
+    height: calc(5vh);
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -2.5vh;
+    left: 0;
+    z-index: 10;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(180deg);
+
+}
+
+#banner3 .after {
+    background-color: var(--color-background);
+    height: calc(5vh);
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+    z-index: 10;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+#banner4 .after {
+    background-color: var(--color-background);
+    height: calc(5vh);
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -2.5vh;
+    left: 0;
+    z-index: 10;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(180deg);
+}
+/*
 #banner .after::after {
     background-color: var(--color-background);
     height: calc(10vh);
@@ -229,7 +299,7 @@ nav li{
     left: 0;
     border-radius: 50%;
 }
-
+*/
 .banner-area {
     display: flex;
     align-items: center;
@@ -450,7 +520,7 @@ nav a{
     }
 }
 .about-open {
-    height: 5vh;
+    height: 10vh;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -591,10 +661,9 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height:60vh ;
-    max-width: 450px;
+    height:auto ;
     width: 90%;
-    min-height: 400px;
+    min-height: 550px;
     box-shadow: #05ffa8 1px 4px 15px;
     border-bottom: solid 3px var(--color-distaque) ;
     border-right: solid 3px var(--color-distaque);
@@ -823,6 +892,7 @@ footer .contact-area {
     font-family: 'Courier New', Courier, monospace;
     border-top-right-radius: 40%;
     padding: 20px 0;
+    opacity: 0.6;
 }
 
 .email {
@@ -830,11 +900,11 @@ footer .contact-area {
     text-align: start;
     font-size: 13px;
     width: 100%;
-    opacity: 0.4;
+    color: var(--color-text);
     a {
         padding: 0 20px 0 70px;
         text-decoration: none;
-        color: var(--color-text);
+        
         text-shadow: 0px 3px 3px var(--color-background);
     }
     img {
@@ -851,7 +921,7 @@ footer .contact-area {
     padding-top: 10px;
     width: 100%;
     gap: 10px;
-    opacity: 0.4;
+    color: var(--color-text);
     a {
         padding: 0 20px 0 70px;
         text-decoration: none;
@@ -865,9 +935,10 @@ footer .contact-area {
 
 .copyright {
     font-size: 12px;
-    margin-bottom: 10px;
-    opacity: 0.4;
+    color: var(--color-text);
+    margin-bottom: -15px;
     text-shadow: 0px 3px 3px var(--color-background);
+    
 }
 
   @media (max-width:1300px) and (min-width:701px){
@@ -1292,52 +1363,5 @@ footer .contact-area {
        
     }
     
-        #banner .after::after {
-            background-color: var(--color-background);
-            height: calc(10vh);
-            width: 100%;
-            content: "";
-            position: absolute;
-            bottom: -5%;
-            left: 0;
-            z-index: 10;
-            border-radius: 50%;
-        }
     
-        #banner2 .after::after {
-            background-color: var(--color-background);
-            height: calc(10vh);
-            width: 100%;
-            content: "";
-            position: absolute;
-            bottom: -3%;
-            left: 0;
-            z-index: 10;
-            border-radius: 50%;
-        }
-    
-        #banner3 .after::after {
-            background-color: var(--color-background);
-            height: calc(10vh);
-            width: 100%;
-            content: "";
-            position: absolute;
-            bottom: -1.3%;
-            left: 0;
-            border-radius: 50%;
-            z-index: 10;
-        }
-    
-    
-        #banner4 .after::after {
-            background-color: var(--color-background);
-            height: calc(10vh);
-            width: 100%;
-            content: "";
-            position: absolute;
-            bottom: -1%;
-            left: 0;
-            z-index: 10;
-            border-radius: 50%;
-        }
 }
