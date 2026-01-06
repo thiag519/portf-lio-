@@ -103,8 +103,6 @@ const section = document.querySelectorAll('section');
 function handleActiveSection() {
   section.forEach((item, index) => {
     const delimitador = item.getBoundingClientRect() //obter Cliente Delimitador Retângulo
-    console.log(delimitador.top, delimitador.bottom, window.innerHeight)
-    console.log(index)
     if (delimitador.top <= window.innerHeight/3 && delimitador.bottom >= window.innerHeight/3) {
       currentIndex = index;
       menuBtn.forEach((item, index) => {
@@ -165,6 +163,33 @@ form.addEventListener('submit', async (e) => {
   }
   
 });
+
+// Feichar e abrir modal de sobre mim
+
+let aboutClose = document.querySelector('.about-close');
+let aboutOpen = document.querySelector('.about-open');
+
+let aboutMeModal = document.querySelector('.about-me');
+
+aboutClose.addEventListener('click', () => {
+  console.log("clicou..close");
+  aboutMeModal.style.opacity = 0;
+  
+  aboutMeModal.style.opacity = 1;
+  aboutMeModal.style.display = 'none';
+  aboutOpen.style.display = 'flex';
+  
+  
+  
+
+});
+aboutOpen.addEventListener('click', () => {
+  console.log("clicou..open");
+  aboutMeModal.style.display = 'flex';
+  aboutOpen.style.display = 'none';
+ 
+})
+
 
 
 
