@@ -254,52 +254,7 @@ header .after {
     border-bottom-right-radius: 50%;
     transform: rotate(180deg);
 }
-/*
-#banner .after::after {
-    background-color: var(--color-background);
-    height: calc(10vh);
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    z-index: 10;
-    border-radius: 50%;
-}
-#banner2 .after::after {
-    background-color: var(--color-background);
-    height: calc(10vh);
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    z-index: 10;
-    border-radius: 50%;
-}
-#banner3 .after::after {
-    background-color: var(--color-background);
-    height: calc(10vh);
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    border-radius: 50%;
-    z-index: 10;
-}
 
-#banner4 .after::after {
-    background-color: var(--color-background);
-    height: calc(10vh);
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    border-radius: 50%;
-}
-*/
 .banner-area {
     display: flex;
     align-items: center;
@@ -346,7 +301,7 @@ header .after {
     height: auto;
     min-height: 100px;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 80%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -482,6 +437,7 @@ nav a{
     height: auto;
     padding: 30px;
     width: 90%;
+    max-width: 600px;
     font-size: 17px;
     border-bottom: solid 4px #05ffa8;
     box-shadow: 5px 8px 10px #05ffa8;
@@ -492,11 +448,12 @@ nav a{
     border-radius: 10px;
     transition: all ease 1s;
     p {
-        text-align: start;
+        text-align:justify;
         text-indent:initial;
         line-height: 1.4;
         /*line-break: anywhere;*/
         width: 90%;
+        margin-bottom: 20px;
     }
     .about-close {
         position: absolute;
@@ -521,12 +478,21 @@ nav a{
 }
 .about-open {
     height: 10vh;
-    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #05ffa8;
+    p {
+        color: #05ffa8;
+        font-size: 12px;
+        border:solid 2px var(--color-distaque);
+        padding: 10px;
+        border-radius: 10px;
+        &:hover {
+            background-color: var(--color-secondary);
+        } 
+    }
+    
     /*text-shadow: 2px 6px 5px #05ffa8;*/
 }
 .linha-do-tempo {
@@ -615,16 +581,24 @@ nav a{
     flex-wrap: wrap;
 }
 .skill{
-    text-shadow: 0px 3px 3px var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
-    width: 12vw;
+    width: 20vw;
     margin: 20px; 
     position:inherit;
+    svg {
+        width: 100%;
+        max-width: 80px;
+    }
 }
  .skill-description {
      padding: 10px 0;
      font-size: 14px;
+     width: 100%;
      text-align: start;
+     text-shadow: 0px 3px 3px var(--color-primary);
  }
  .skill-description strong {
      padding: 10px 0;

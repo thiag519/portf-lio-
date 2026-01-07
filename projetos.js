@@ -2,16 +2,16 @@ const projetos = [
   { id:1, 
     titulo:'Salão de Beleza',
     imagem: 'projetos/Império-da-Beleza.PNG', 
-    descricao: ["Desafio: Criar um site institucional para um salão de beleza que transmitisse profissionalismo e facilitasse o contato com clientes.", "Solução: Desenvolvimento de uma aplicação web moderna com React, Next.js, TypeScript e Tailwind CSS, focada em responsividade, usabilidade e organização do código.", "Resultado: O projeto resultou em uma presença digital mais profissional, melhorando a experiência dos usuários e servindo como base para futuras evoluções do site."] ,
+    descricao: ["Desafio: Criar um site institucional para um salão de beleza que transmitisse profissionalismo e facilitasse o contato com clientes.", "Solução: Desenvolvimento de uma aplicação web moderna com React, Next.js, TypeScript e Tailwind CSS, focada em responsividade, usabilidade e organização do código.", "Resultado: O projeto resultou em uma presença digital mais profissional para o salão. Até o momento, o site já conta com dois agendamentos realizados."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
    { id:2, 
     titulo:'Envio de Email',
     imagem: 'projetos/Area-de-envio.PNG', 
-    descricao: ["Desafio: Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"Solução: Desenvolver API em Node.js com Express, Resend(AOI de e-mail) e TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, hospedagem Serverless na Vercel.","Resultado: Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
+    descricao: ["Desafio: Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"Solução: Desenvolver API em Node.js com Express, CORS, Resend(API de e-mail) e TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, hospedagem Serverless na Vercel.","Resultado: Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
     linkgit: 'https://github.com/thiag519/send-.git',
-    linkdeploy: 'https://thiag519.github.io/portf-lio-/'
+    linkdeploy: 'https://thiag519.github.io/portf-lio-/#footer-contact'
   },
    { id:3,
     titulo:'Pagina Starbucks',
