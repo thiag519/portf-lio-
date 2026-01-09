@@ -6,6 +6,21 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+@media print {
+    nav,
+    footer,
+    button {
+        display: none;
+    }
+    input {
+        border: none;
+    }
+    main {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 html, body{
     scroll-behavior: smooth;
     background-color: var(--color-background);
