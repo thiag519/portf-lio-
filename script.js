@@ -168,27 +168,29 @@ form.addEventListener('submit', async (e) => {
 
 let aboutClose = document.querySelector('.about-close');
 let aboutOpen = document.querySelector('.about-open');
-
 let aboutMeModal = document.querySelector('.about-me');
 
 aboutClose.addEventListener('click', () => {
-  console.log("clicou..close");
   aboutMeModal.style.opacity = 0;
   
-  aboutMeModal.style.opacity = 1;
-  aboutMeModal.style.display = 'none';
-  aboutOpen.style.display = 'flex';
-  
-  
-  
-
+  setTimeout( () => { 
+      aboutOpen.style.opacity = 1;
+      aboutMeModal.style.display = 'none';
+      aboutOpen.style.display = 'flex';
+    },400
+  );
 });
+
 aboutOpen.addEventListener('click', () => {
-  console.log("clicou..open");
-  aboutMeModal.style.display = 'flex';
-  aboutOpen.style.display = 'none';
- 
-})
+  aboutMeModal.style.opacity = 1;
+  aboutOpen.style.opacity = 0;
+  setTimeout( () => { 
+    
+    aboutMeModal.style.display = 'flex';
+    aboutOpen.style.display = 'none';  
+    },400
+  );
+});
 
 
 

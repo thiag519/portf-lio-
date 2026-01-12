@@ -82,7 +82,7 @@ html, body{
     white-space: nowrap;
     overflow: hidden;
     letter-spacing: 5.3px;
-    border-right: 0.12em solid var(--color-distaque);
+    border-right: 0.10em solid var(--color-distaque);
     animation: writing 2.5s steps(13, end)  1s infinite alternate,
                blink 0.7s step-end infinite 
 }
@@ -449,7 +449,7 @@ nav a{
     flex-direction: column;
     height: 100%;
     width: 80%;
-    transition: all ease 1s;
+    /*transition: 0.4s linear;*/
 }
 
 .about-me {
@@ -468,12 +468,11 @@ nav a{
     margin-bottom: 30px;
     background-color: var(--color-background);
     border-radius: 10px;
-    transition: all ease 1s;
+    transition: 0.4s linear;
     p {
         text-align:justify;
         text-indent:initial;
         line-height: 1.4;
-        /*line-break: anywhere;*/
         width: 90%;
         font-size: 12px;
         margin-bottom: 20px;
@@ -490,9 +489,7 @@ nav a{
         cursor: pointer;
         border-radius: 50%;
         margin: 5px;
-        transition: all ease 0.5s;
         &:hover {
-            /*opacity: 0.5;*/
             background-color: var(--color-secondary);
         }
         img {
@@ -506,6 +503,7 @@ nav a{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.4s linear;
     p {
         color: #05ffa8;
         font-size: 12px;
@@ -752,7 +750,7 @@ nav a{
 }
 .projeto .projeto-image img {
     flex: 1;
-    height:200px;
+    height:150px;
     width: 100%; 
 }
 .projeto-testo {
@@ -858,6 +856,7 @@ nav a{
 }
 
 .area-send-message h1 {
+    color: var(--color-distaque);
     height: 100px;
     width: 100%;
     max-width: 600px;
@@ -866,6 +865,8 @@ nav a{
     justify-content: center;
     margin-top: 20px;
     text-align: center;
+    font-size: larger;
+    text-shadow: 0px 3px 3px var(--color-primary);
 }
 
 .area-send-message label {
@@ -1336,6 +1337,11 @@ footer .contact-area {
         display: block;
         margin-top: 60px;
         width: 100%;
+    }
+    
+    .area-skills-width:hover {
+            animation-play-state:running;
+        
     }/*
     .projeto {
         width:  80vw;

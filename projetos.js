@@ -22,7 +22,7 @@ const projetos = [
   },
    { id:4,
     titulo:'Pagina Starbucks',
-    imagem:'projetos/Pagina-Starbucks.PNG',
+    imagem:'projetos/Pagina-Starbucks.png',
     descricao:['Desafio: Criar cópia do site da Starbucks para por em prática conhecimento em Grids.', 'Solução: Utilizei CSS com Grids para criar interface responsiva e moderna.', 'Resultado: Consolidei a capacidade de desenvolver sites responsivos e bem estruturados usando CSS Grid.'],
     linkgit:'https://github.com/thiag519/c-pia-starbucks.git',
     linkdeploy:'https://thiag519.github.io/c-pia-starbucks/'
