@@ -2,39 +2,65 @@ const projetos = [
   { id:1, 
     titulo:'Salão de Beleza',
     imagem: 'projetos/Império-da-Beleza.PNG', 
-    descricao: ["Desafio: Criar um site institucional para um salão de beleza que transmitisse profissionalismo e facilitasse o contato com clientes.", "Solução: Desenvolvi uma aplicação web moderna com React, Next.js, TypeScript e Tailwind CSS, focada em responsividade, usabilidade, organização do código e tecnicas de SEO como otimização de imagens e meta tags.", "Resultado: O projeto resultou em uma presença digital mais profissional para o salão. Até o momento, o site já conta com dois agendamentos realizados."] ,
+    tecnologias: ['React', 'TypeScript', 'Next','Tailwind css'],
+    descricao: [
+      "Desafio: Desenvolver um site institucional que transmitisse profissionalismo, apresentasse claramente os serviços do salão e facilitasse o contato com clientes.", 
+      "Solução: Criação de uma aplicação web responsiva utilizando React, Next.js, TypeScript e Tailwind CSS, com foco em componentização, organização do código e boas práticas de usabilidade. O projeto foi versionado com Git, garantindo controle e rastreabilidade das alterações.", 
+      "Resultado: O cliente passou a contar com uma presença digital mais profissional, melhorando a comunicação com os clientes e fortalecendo a identidade visual do negócio. O projeto também demonstra minha capacidade de planejar e entregar interfaces modernas e bem estruturadas."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
-   { id:2, 
+   { 
+    id:2, 
     titulo:'Envio de Email',
     imagem: 'projetos/Area-de-envio.PNG', 
-    descricao: ["Desafio: Criar um servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio." ,"Solução: Desenvolvi uma API em Node.js com Express, CORS, Resend(API de e-mail) e TypeScript para enviar mensagens do formulário do meu portfólio diretamente para meu e-mail, hospedagem Serverless na Vercel.","Resultado: Por em pratica conhecimento em Node e conexão Back-end, Front-end e API."] ,
+    tecnologias: ['Node','TypeScript','API REST'],
+    descricao: [
+      "Desafio: Criar uma solução back-end para envio de e-mails a partir de um formulário web, garantindo comunicação eficiente entre front-end e servidor.", 
+      "Solução: Desenvolvimento de uma API REST em Node.js utilizando Express, TypeScript e CORS, integrada à API de e-mail Resend. A aplicação recebe as mensagens do formulário, processa os dados e realiza o envio de e-mails de forma segura. O projeto foi hospedado em ambiente serverless na Vercel.",
+      "Resultado: Implementação de uma funcionalidade funcional e escalável de envio de e-mails, melhorando o fluxo de contato do site e demonstrando integração entre front-end, back-end e serviços externos."] ,
     linkgit: 'https://github.com/thiag519/send-.git',
     linkdeploy: 'https://thiag519.github.io/portf-lio-/#footer-contact'
   },
-  { id:3,
-    titulo:'Calculadora IMC',
-    imagem:'projetos/IMC.PNG',
-    descricao:['Desafio: Criar calculadora de IMC onde o usuário preenche seu peso e altura e recebe uma informaçao sobre como esta seu IMC.','Solução: Desenvolvi a calculadora IMC usando componentização com React, CSS e TypeScript.','Resultado: Uma calculadora de IMC eficiente e com resultado imediato.'],
-    linkgit:'https://github.com/thiag519/react-calc-imc.git',
-    linkdeploy:'https://react-calc-imc-delta.vercel.app/'
+  {
+    id: 3,
+    titulo: 'Calculadora IMC',
+    imagem: 'projetos/IMC.PNG',
+    tecnologias: ['React', 'TypeScript', 'CSS'],
+    descricao: [
+      'Desafio: Desenvolver uma calculadora de IMC que permita ao usuário informar peso e altura e receber, de forma clara e imediata, a classificação do índice de massa corporal.',
+      'Solução: Desenvolvimento da aplicação utilizando React com componentização, TypeScript para maior organização do código e CSS para estilização da interface.',
+      'Resultado: Entrega de uma aplicação funcional e responsiva, demonstrando capacidade de criar interfaces interativas e aplicar lógica de negócio no front-end.'
+    ],
+    linkgit: 'https://github.com/thiag519/react-calc-imc.git',
+    linkdeploy: 'https://react-calc-imc-delta.vercel.app/'
   },
-   { id:4,
-    titulo:'Pagina Starbucks',
-    imagem:'projetos/Pagina-Starbucks.png',
-    descricao:['Desafio: Criar cópia do site da Starbucks para por em prática conhecimento em Grids.', 'Solução: Utilizei CSS com Grids para criar interface responsiva e moderna.', 'Resultado: Consolidei a capacidade de desenvolver sites responsivos e bem estruturados usando CSS Grid.'],
-    linkgit:'https://github.com/thiag519/c-pia-starbucks.git',
-    linkdeploy:'https://thiag519.github.io/c-pia-starbucks/'
+   {
+    id: 4,
+    titulo: 'Página Starbucks',
+    imagem: 'projetos/Pagina-Starbucks.png',
+    tecnologias: ['HTML', 'JypeScript', 'CSS Grid'],
+    descricao: [
+      'Desafio: Reproduzir a interface do site da Starbucks com foco em layout, organização visual e responsividade.',
+      'Solução: Desenvolvimento da página utilizando CSS Grid para construção do layout, aplicando boas práticas de responsividade e organização visual.',
+      'Resultado: Projeto que consolidou minha capacidade de desenvolver layouts modernos e responsivos, demonstrando domínio de CSS Grid e atenção à estrutura visual.'
+    ],
+    linkgit: 'https://github.com/thiag519/c-pia-starbucks.git',
+    linkdeploy: 'https://thiag519.github.io/c-pia-starbucks/'
   },
-   { id:5,
-    titulo:'Pizzaria',
-    imagem:'projetos/Pizzas.PNG',
-    descricao:['Desafio: Desenvolver um catálogo de pizzas interativo que possibilita escolher o sabor, tamanho da pizza, adicione ao carrinho e saber o total do seu pedido na hora.', 'Solução: Utilizei HTML para a estrutura, CSS para o styling e layout responsivo, e JavaScript para a lógica de negócio e interatividade.', 'Resultado: Etapa de desenvolvimento da loja de pizzas concluída, demonstrando domínio em HTML, CSS e JavaScript, com foco em responsividade e usabilidade.'],
-    linkgit:'https://github.com/thiag519/projeto_pizza.git',
-    linkdeploy:'https://thiag519.github.io/projeto_pizza/'
+   {
+    id: 5,
+    titulo: 'Pizzaria',
+    imagem: 'projetos/Pizzas.PNG',
+    tecnologias: ['HTML', 'CSS', 'JavaScript'],
+    descricao: [
+      'Desafio: Desenvolver um catálogo interativo de pizzas que permitisse ao usuário escolher sabor, tamanho, adicionar itens ao carrinho e visualizar o valor total do pedido em tempo real.',
+      'Solução: Implementação da aplicação utilizando HTML para estruturação, CSS para estilização e layout responsivo, e JavaScript para lógica de negócio, controle do carrinho e interatividade.',
+      'Resultado: Desenvolvimento de uma aplicação interativa e funcional, demonstrando domínio de JavaScript, organização da lógica de negócio e foco em usabilidade.'
+    ],
+    linkgit: 'https://github.com/thiag519/projeto_pizza.git',
+    linkdeploy: 'https://thiag519.github.io/projeto_pizza/'
   }
-  
 ]
   /*{ id:4,
     titulo:'Pagina Web',

@@ -85,6 +85,9 @@ projetos.forEach((item, index) => {
   projetoItem.querySelector('.projeto-title h2').textContent = item.titulo;
   projetoItem.querySelector('.projeto-image img').src = item.imagem;
   projetoItem.querySelector('.projeto-image img').alt = item.titulo;
+  item.tecnologias.map(e => {
+    projetoItem.querySelector('.projeto-tecnologias').innerHTML += `<div>${e}</div>`;
+  })
   item.descricao.map(e => {
   projetoItem.querySelector('.projeto-testo').innerHTML += ` <li>${e}</li> `;
 });
