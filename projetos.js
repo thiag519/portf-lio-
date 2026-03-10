@@ -35,20 +35,7 @@ const projetos = [
     linkgit: 'https://github.com/thiag519/react-calc-imc.git',
     linkdeploy: 'https://react-calc-imc-delta.vercel.app/'
   },
-   {
-    id: 4,
-    titulo: 'Página Starbucks',
-    imagem: 'projetos/Pagina-Starbucks.png',
-    tecnologias: ['HTML', 'JypeScript', 'CSS Grid'],
-    descricao: [
-      'Desafio: Reproduzir a interface do site da Starbucks com foco em layout, organização visual e responsividade.',
-      'Solução: Desenvolvimento da página utilizando CSS Grid para construção do layout, aplicando boas práticas de responsividade e organização visual.',
-      'Resultado: Projeto que consolidou minha capacidade de desenvolver layouts modernos e responsivos, demonstrando domínio de CSS Grid e atenção à estrutura visual.'
-    ],
-    linkgit: 'https://github.com/thiag519/c-pia-starbucks.git',
-    linkdeploy: 'https://thiag519.github.io/c-pia-starbucks/'
-  },
-   {
+  {
     id: 5,
     titulo: 'Pizzaria',
     imagem: 'projetos/Pizzas.PNG',
@@ -91,5 +78,17 @@ const projetos = [
     linkgit:'https://github.com/thiag519/quiz-javascript.git',
     linkdeploy:'https://thiag519.github.io/relogio-analogico/'
   },
-   
+    {
+    id: 4,
+    titulo: 'Página Starbucks',
+    imagem: 'projetos/Pagina-Starbucks.png',
+    tecnologias: ['HTML', 'JypeScript', 'CSS Grid'],
+    descricao: [
+      'Desafio: Reproduzir a interface do site da Starbucks com foco em layout, organização visual e responsividade.',
+      'Solução: Desenvolvimento da página utilizando CSS Grid para construção do layout, aplicando boas práticas de responsividade e organização visual.',
+      'Resultado: Projeto que consolidou minha capacidade de desenvolver layouts modernos e responsivos, demonstrando domínio de CSS Grid e atenção à estrutura visual.'
+    ],
+    linkgit: 'https://github.com/thiag519/c-pia-starbucks.git',
+    linkdeploy: 'https://thiag519.github.io/c-pia-starbucks/'
+  },
   */

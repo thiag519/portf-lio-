@@ -2,7 +2,7 @@
 
 👋 Olá! Seja bem-vindo ao meu portfólio online.
 
-Sou **Thiago Souza**, Desenvolvedor Web apaixonado por transformar ideias em interfaces encantadoras. Desde 2022 venho explorando o mundo da programação, começando com HTML, CSS e JavaScript. Hoje, também trabalho com TypeScript, Tailwind CSS, React e estou me aprofundando no back-end com Node.js.
+Sou **Thiago Souza**, Desenvolvedor Web apaixonado por transformar ideias em interfaces encantadoras. Desde **2022** venho explorando o mundo da programação, começando com **HTML**, **CSS** e **JavaScript**. Hoje, também trabalho com **TypeScript**, **Tailwind CSS**, **React** e estou me aprofundando no back-end com **Node.js**.
 
 🎓 Atualmente, curso **Ciências da Computação** e estou sempre em busca de novos desafios e oportunidades para crescer como profissional.
 
