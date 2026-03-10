@@ -19,7 +19,7 @@ Sou **Thiago Souza**, Desenvolvedor Web apaixonado por transformar ideias em int
 | Salão de Beleza | Site desenvolvido para agendamento e contato de clientes | [Acessar projeto](https://www.imperiodabelezaposse.com.br/) |
 | Envio de Email | Servidor com Node.js para envio de email e conectar com o front-end do meu Portfólio. | [Acessar projeto](https://thiag519.github.io/portf-lio-/#footer-contact) |
 | Portfólio | Site desenvolvido para exibir projetos e conctar com clientes e recrutadores | [Acessar projeto](https://createsites.com.br/) |
-| Jogo da Velha | Clássico jogo da velha com interface web | [Acessar projeto](https://thiag519.github.io/jogo-da-velha/) |
+
 
 ## 📫 Contato
 
