@@ -10,20 +10,32 @@ const projetos = [
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
-   { 
+  { 
     id:2, 
+    titulo:'Lista de Tarefas',
+    imagem: 'projetos/Lista-de-Tarefas.PNG', 
+    tecnologias: ['Lambda','AWS','JavaScript', 'Java'],
+    descricao: [
+      "Desafio: Desenvolver uma aplicação de gerenciamento de tarefas, utilizando serviços em nuvem AWS e integração entre front-end e back-end, garantindo comunicação segura entre diferentes origens. com objetivo de aplicar conhecimentos em arquitetura serverless, integração de APIs e deploy em nuvem.",
+      "Solução: Implementação de uma arquitetura serverless utilizando AWS Lambda para processamento das requisições, API Gateway para exposição dos endpoints e DynamoDB para armazenamento dos dados. O back-end foi desenvolvido em Java com Spring Boot. O front-end foi construído com HTML, CSS e JavaScript.",
+      "Resultado: Aplicação funcional e escalável, permitindo gerenciamento de tarefas. O projeto demonstra domínio em integração entre front-end e back-end, uso de arquitetura serverless com AWS Lambda, API Gateway e DynamoDB, além de prática com deploy em nuvem e consumo de APIs REST."],
+    linkgit: 'https://github.com/thiag519/tasks-front.git',
+    linkdeploy: 'https://tasks-front-dusky.vercel.app/'
+  },
+   { 
+    id:3, 
     titulo:'Envio de Email',
     imagem: 'projetos/Area-de-envio.PNG', 
     tecnologias: ['Node','TypeScript','API REST'],
     descricao: [
       "Desafio: Criar uma solução back-end para envio de e-mails a partir de um formulário web, garantindo comunicação eficiente entre front-end e servidor.", 
-      "Solução: Desenvolvimento de uma API REST em Node.js utilizando Express, TypeScript e CORS, integrada à API de e-mail Resend. A aplicação recebe as mensagens do formulário, processa os dados e realiza o envio de e-mails de forma segura. O projeto foi hospedado em ambiente serverless na Vercel.",
-      "Resultado: Implementação de uma funcionalidade funcional e escalável de envio de e-mails, melhorando o fluxo de contato do site e demonstrando integração entre front-end, back-end e serviços externos."] ,
+      "Solução: Desenvolvimento de uma API REST em Node.js utilizando Express e TypeScript integrada à API de e-mail Resend. A aplicação recebe as mensagens do formulário, processa os dados e realiza o envio de e-mails de forma segura. O projeto foi hospedado em ambiente serverless na Vercel.",
+      "Resultado: Implementação de uma funcionalidade escalável de envio de e-mails, melhorando o fluxo de contato do site e demonstrando integração entre front-end, back-end e serviços externos."] ,
     linkgit: 'https://github.com/thiag519/send-.git',
     linkdeploy: 'https://thiag519.github.io/portf-lio-/#footer-contact'
   },
   {
-    id: 3,
+    id: 4,
     titulo: 'Calculadora IMC',
     imagem: 'projetos/IMC.PNG',
     tecnologias: ['React', 'TypeScript', 'CSS'],
