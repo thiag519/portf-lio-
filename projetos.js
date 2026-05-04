@@ -34,21 +34,8 @@ const projetos = [
     linkgit: 'https://github.com/thiag519/send-.git',
     linkdeploy: 'https://thiag519.github.io/portf-lio-/#footer-contact'
   },
-  {
+ {
     id: 4,
-    titulo: 'Calculadora IMC',
-    imagem: 'projetos/IMC.PNG',
-    tecnologias: ['React', 'TypeScript', 'CSS'],
-    descricao: [
-      'Desafio: Desenvolver uma calculadora de IMC que permita ao usuário informar peso e altura e receber, de forma clara e imediata, a classificação do índice de massa corporal.',
-      'Solução: Desenvolvimento da aplicação utilizando React com componentização, TypeScript para maior organização do código e CSS para estilização da interface.',
-      'Resultado: Entrega de uma aplicação funcional e responsiva, demonstrando capacidade de criar interfaces interativas e aplicar lógica de negócio no front-end.'
-    ],
-    linkgit: 'https://github.com/thiag519/react-calc-imc.git',
-    linkdeploy: 'https://react-calc-imc-delta.vercel.app/'
-  },
-  {
-    id: 5,
     titulo: 'Pizzaria',
     imagem: 'projetos/Pizzas.PNG',
     tecnologias: ['HTML', 'CSS', 'JavaScript'],
@@ -61,7 +48,21 @@ const projetos = [
     linkdeploy: 'https://thiag519.github.io/projeto_pizza/'
   }
 ]
-  /*{ id:4,
+  /*
+  
+   { 
+    id:4, 
+    titulo:'Urna Eletronica',
+    imagem: 'projetos/Urna.PNG', 
+    tecnologias: ['HTML', 'CSS', 'JavaScript'],
+    descricao: [
+      "Permiti o usuário escolher os seus candidatos, exibir na tela suas escolhas e confirmar seu voto. Conta ainda com area para ver candidados(colinha)" ,
+      "Usando manipulção de elementos HTML com JavaScript e estilizando com CSS.",
+      "Intuitivo e de fácil interação. Permitindo armazenar votos, exibir voto e finalizar com o som classico da urna eletronica."] ,
+    linkgit: 'https://github.com/thiag519/projeto-urna.git',
+    linkdeploy: 'https://thiag519.github.io/projeto-urna/'
+  },
+  { id:4,
     titulo:'Pagina Web',
     imagem:'projetos/Pagina-web.jpeg',
     descricao:' Este projeto é uma recriação de uma página web, desenvolvido com HTML e CSS.  O site apresenta um design responsivo, permitindo que os usuários visualizem as informações  sobre a empresa.',
@@ -75,13 +76,7 @@ const projetos = [
     linkgit:'https://github.com/thiag519/jogo-da-velha.git',
     linkdeploy:'https://thiag519.github.io/jogo-da-velha/'
   },
-{ id:3, 
-    titulo:'Urna Eletronica',
-    imagem: 'projetos/Urna.PNG', 
-    descricao: [" Permiti o usuário escolher os seus candidatos, exibir na tela suas escolhas e confirmar seu voto. Conta ainda com area para ver candidados(colinha)" ,"Usando manipulção de elementos HTML com JavaScript e estilizando com CSS."," Intuitivo e de fácil interação. Permitindo armazenar votos, exibir voto e finalizar com o som classico da urna eletronica."] ,
-    linkgit: 'https://github.com/thiag519/projeto-urna.git',
-    linkdeploy: 'https://thiag519.github.io/projeto-urna/'
-  },
+
 ,
    { id:6,
     titulo:'Quiz Dev',
@@ -102,5 +97,17 @@ const projetos = [
     ],
     linkgit: 'https://github.com/thiag519/c-pia-starbucks.git',
     linkdeploy: 'https://thiag519.github.io/c-pia-starbucks/'
+  },{
+    id: 4,
+    titulo: 'Calculadora IMC',
+    imagem: 'projetos/IMC.PNG',
+    tecnologias: ['React', 'TypeScript', 'CSS'],
+    descricao: [
+      'Desafio: Desenvolver uma calculadora de IMC que permita ao usuário informar peso e altura e receber, de forma clara e imediata, a classificação do índice de massa corporal.',
+      'Solução: Desenvolvimento da aplicação utilizando React com componentização, TypeScript para maior organização do código e CSS para estilização da interface.',
+      'Resultado: Entrega de uma aplicação funcional e responsiva, demonstrando capacidade de criar interfaces interativas e aplicar lógica de negócio no front-end.'
+    ],
+    linkgit: 'https://github.com/thiag519/react-calc-imc.git',
+    linkdeploy: 'https://react-calc-imc-delta.vercel.app/'
   },
   */
