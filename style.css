@@ -100,7 +100,7 @@ main {
 #header{
     display: flex;
     justify-content:center;
-    height: 8vh;
+    height: 3vh;
     min-height: 50px;
     align-items: center;
     background-color:var(--color-background);
@@ -114,7 +114,7 @@ main {
 .header{
     top: 0;
     width: 80%;
-    height: 8vh;
+    height: 3vh;
     min-height: 50px;
     justify-content: space-between;
     display: flex;
@@ -150,16 +150,16 @@ main {
     display:flex;
     height: 100%;
     width: 100%; 
+    padding-top: 30px;
 }
 .logo
 a img{
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
+    width:90px;
+    height: 90px;
+    /*border-radius: 50%;
     /*clip-path: circle(50%);*/
-    
     object-fit: cover;
-    background-color:var(--color-distaque)
+    /*background-color:var(--color-distaque)*/
 }
 .active { 
     background-color:var(--color-distaque);
@@ -179,9 +179,9 @@ nav li{
 }
 .menu-mobile-line{
     display:none;
-    height:35px;
-    width:35px;
-    margin-top:40px;
+    height:25px;
+    width:25px;
+    margin-top:50px;
     margin-bottom:40px;
     margin-right:20px; 
 }
@@ -192,7 +192,7 @@ nav li{
     display: none;  
 }
 .mm-line{
-    height:3px;
+    height:2.5px;
     background-color:rgb(141, 155, 155);
     transition: 0.5s linear 1ms;
     padding: 0;
@@ -293,14 +293,14 @@ header .after {
     margin-top: 10%;
 }
 .image-perfil img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    opacity: 0.3;
+    /*opacity: 0;
     object-fit: cover;
     object-position:center;
     background-position: center;
-    background-color: #9eafa9;
+    /*background-color: #9eafa9;*/
 }
 .image-perfil  img:hover{
     transition:0.4s linear ;
@@ -1053,7 +1053,7 @@ footer .contact-area {
         width: 340px;
         height:340px;
         border-radius: 50%;
-        opacity: 0.3;
+       /* opacity: 0.3;*/
     }
     .banner_title {
         height: 220px;
@@ -1140,13 +1140,13 @@ footer .contact-area {
         display: none;
     }
     .logo a img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        /*border-radius: 50%;
         clip-path: circle(50%);
         position: static;
         object-fit: cover;
-        background-color: var(--color-distaque);
+        background-color: var(--color-distaque);*/
     }
     .header {
         width: 90%;
