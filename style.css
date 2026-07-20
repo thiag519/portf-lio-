@@ -120,7 +120,7 @@ main {
     display: flex;
     align-items: center;
     position: fixed;
-    background-color:var(--color-background);
+    /*background-color:var(--color-distaque);*/
     z-index: 51;
     /* border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%; */
@@ -145,21 +145,23 @@ main {
 }
 
 .logo{
-    align-items: center;
+    align-items: start;
     justify-content:flex-start;
     display:flex;
     height: 100%;
-    width: 100%; 
-    padding-top: 30px;
+    width:50%; 
+    /*padding-top: 30px;*/
+    /*background-color:var(--color-text)*/
 }
 .logo
 a img{
-    width:90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     /*border-radius: 50%;
     /*clip-path: circle(50%);*/
     object-fit: cover;
-    /*background-color:var(--color-distaque)*/
+    /*background-color: #9eafa9;*/
+    
 }
 .active { 
     background-color:var(--color-distaque);
@@ -183,8 +185,7 @@ nav li{
     width:25px;
     margin-top:50px;
     margin-bottom:50px;
-    margin-right:50px; 
-   
+    /*margin-right:50px; */
 }
 .menu-mobile{
     display: none;  
@@ -1141,8 +1142,8 @@ footer .contact-area {
         display: none;
     }
     .logo a img {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         /*border-radius: 50%;
         clip-path: circle(50%);
         position: static;
@@ -1151,11 +1152,8 @@ footer .contact-area {
     }
     .header {
         width: 90%;
-        
     }
-    .logo{
-        margin-left:20px;
-    }
+    
     .menu-mobile-line{
         display:flex;
         flex-direction:column;
@@ -1164,7 +1162,7 @@ footer .contact-area {
     }
     .active{
         background-color:transparent;
-        opacity: 0.4;
+        opacity: 0.7;
         text-shadow: 2px 4px 10px var(--color-distaque);
         transition: 0.5s ease-out;
         box-shadow: 2px 4px 10px var(--color-secondary);
@@ -1172,21 +1170,23 @@ footer .contact-area {
 
     .menu-mobile {
         display:none;
-        flex-direction:column;
         width: 50%;
         height: 50%;
         font-weight: 700;
-        align-items: flex-end;
+        /*align-items: flex-end;*/
         cursor: pointer;
         position: fixed;
-        z-index: 5;
         animation:0.3s openMenu linear ;
-        z-index: 50;
+        z-index: 20;
     }
     .menu-mobile ul {
+        display: flex; 
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        margin-top: 8vh;
-        height: 100vh;
+        margin-top: 5vh;
+        height: 100%;
         background-color:var(--color-primary);
     }
     
