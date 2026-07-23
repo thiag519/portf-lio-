@@ -6,7 +6,7 @@ const projetos = [
     descricao: [
       "Desafio: Desenvolver um site institucional que transmitisse profissionalismo, apresentasse claramente os serviços do salão e facilitasse o contato com clientes.", 
       "Solução: Criação de uma aplicação web responsiva utilizando React, Next.js, TypeScript e Tailwind CSS, com foco em componentização, organização do código e boas práticas de usabilidade. O projeto foi versionado com Git, garantindo controle e rastreabilidade das alterações.", 
-      "Resultado: O cliente passou a contar com uma presença digital mais profissional, melhorando a comunicação com os clientes e fortalecendo a identidade visual do negócio. O projeto também demonstra minha capacidade de planejar e entregar interfaces modernas e bem estruturadas."] ,
+      "Resultado: O cliente passou a contar com uma presença digital mais profissional, melhorando a comunicação com os clientes e fortalecendo a identidade visual do negócio, gerando um aumento de 5% no numero de clientes através do site. O projeto também demonstra minha capacidade de planejar e entregar interfaces modernas e bem estruturadas."] ,
     linkgit: 'https://github.com/thiag519/salao-de-beleza-copia.git',
     linkdeploy: 'https://www.imperiodabelezaposse.com.br/'
   },
